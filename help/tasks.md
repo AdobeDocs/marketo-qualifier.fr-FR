@@ -1,6 +1,6 @@
 ---
-title: Tâches dans le qualificateur Adobe Marketo
-description: Découvrez comment traiter les tâches de sensibilisation manuelles et examiner les prospects suggérés par l’agent dans la file d’attente de tâches du qualificateur Marketo d’Adobe.
+title: Tâches dans [!DNL Adobe Marketo Qualifier]
+description: Découvrez comment traiter les tâches de sensibilisation manuelles et examiner les prospects suggérés par l’agent dans la file d’attente de tâches [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/MbTN1r-ARrW-XYtdIS-KZT7K1Lk-B3GihT8iXL60GrQ'
@@ -12,9 +12,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '1086'
 ht-degree: 0%
 ---
 
@@ -45,7 +45,7 @@ Les tâches manuelles sont liées aux étapes de workflow sortant et existent en
 
 * **[!UICONTROL LinkedInMail]** : créé lorsqu’une cadence atteint une étape LinkedInMail. Le panneau de travail affiche le contenu à copier et à envoyer à partir de LinkedIn. Développez **[!UICONTROL Justification de l’IA]** pour en examiner la justification.
 
-* **[!UICONTROL Email Review]** : créé après que le qualificateur Adobe Marketo a généré les e-mails personnalisés d’un prospect. Sélectionnez **[!UICONTROL Consulter les e-mails]** pour examiner et approuver les brouillons avant que la diffusion ne commence. Voir [Vérifier et affiner les emails générés](outbound-workflows.md#review-and-refine-generated-emails).
+* **[!UICONTROL Révision d’e-mail]** : créé après [!DNL Adobe Marketo Qualifier] génère les e-mails personnalisés d’un prospect. Pour examiner et approuver les brouillons avant le début de la diffusion, sélectionnez **[!UICONTROL Réviser les e-mails]**. Voir [Vérifier et affiner les emails générés](outbound-workflows.md#review-and-refine-generated-emails).
 
 ![Email Review](assets/tasks-review.png)
 
@@ -83,7 +83,7 @@ La barre d’outils située au-dessus de la liste contrôle les tâches qui appa
 * **[!UICONTROL Trier]**—Trier par date d&#39;échéance ou date de création. L’ordre de tri détermine également l’ordre dans lequel la file d’attente avance.
 * **[!UICONTROL Rechercher des tâches]** : recherchez des tâches par nom de prospect, nom de société ou workflow sortant. La recherche s’applique avec les filtres actifs.
 
-Les filtres actifs s’affichent sous forme de puces sous la barre d’outils. Sélectionnez **[!UICONTROL Effacer tout]** pour les réinitialiser.
+Les filtres actifs s’affichent sous forme de puces sous la barre d’outils. Pour les réinitialiser, sélectionnez **[!UICONTROL Effacer tout]**.
 
 ### Statut de la tâche
 
@@ -104,17 +104,34 @@ Les tâches terminées, ignorées et annulées sont finales. Leurs actions ne so
 
 L’onglet **[!UICONTROL Suggestions d’agent]** répertorie les prospects correspondant aux critères de ciblage d’un workflow sortant et sont recommandés pour l’inscription. Pour activer les recommandations, voir [Workflows sortants](outbound-workflows.md).
 
-Sélectionnez une suggestion à examiner dans le panneau de travail :
+Pour examiner une suggestion dans le panneau de travail, sélectionnez-la :
 
 * Un badge de récence marque chaque suggestion comme **[!UICONTROL Nouvelle]** ou **[!UICONTROL Précédente]**.
 * Le tableau **[!UICONTROL Prospects recommandés]** ou **[!UICONTROL Contacts recommandés]** répertorie les prospects proposés avec des colonnes pour **[!UICONTROL Nom]**, **[!UICONTROL Titre]**, **[!UICONTROL Compte]**, **[!UICONTROL Status]**, **[!UICONTROL Email]** et **[!UICONTROL Dernière mise à jour]**.
 
 Deux actions sont disponibles :
 
-* **[!UICONTROL Vérifier les prospects]**—Ouvrez le workflow sortant pour vérifier et inscrire les prospects recommandés. Voir [&#x200B; Ajouter des prospects et commencer la génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
+* **[!UICONTROL Vérifier les prospects]**—Ouvrez le workflow sortant pour vérifier et inscrire les prospects recommandés. Voir [ Ajouter des prospects et commencer la génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
 * **[!UICONTROL Marquer comme terminé]**—Ignorez la suggestion après l&#39;avoir examinée.
 
 L’onglet **[!UICONTROL Suggestions d’agent]** comprend les filtres de statut **[!UICONTROL Actuel]**, **[!UICONTROL Terminé]** et **[!UICONTROL Annulé]**, un filtre Workflow sortant et un tri par date de création.
+
+### Répondre à un prospect avec une suggestion d’agent
+
+Lorsqu’un prospect répond à un e-mail, [!DNL Marketo Qualifier] pouvez rédiger une réponse intégrée et l’ajouter en tant que tâche sous **[!UICONTROL Suggestions d’agent]**. Le projet utilise le contexte pertinent suivant :
+
+* Le thread d’e-mail complet, pas seulement le dernier message.
+* Recherche de produits et documentation connexe de votre centre de connaissances.
+* Signaux de compte, tels que les nouvelles récentes, l’engagement marketing et l’activité CRM.
+* Votre [contexte de rédaction d’e-mail](profile-settings.md#email-drafting-context) enregistré.
+
+L&#39;assistant adapte la réponse à l&#39;intention du prospect. Par exemple, il peut offrir des heures par le biais de votre lien de réservation pour une demande de réunion, renforcer la valeur lorsque le prospect est intéressé, répondre à une question sur un produit à partir de votre garantie, partager un actif pertinent, répondre à une objection avec un facteur de différenciation ou utiliser une réponse à faible pression lorsque le prospect souhaite différer.
+
+Des messages sur les prix, les exigences légales ou de sécurité, les réponses hostiles et les demandes peu claires restent au représentant pour une réponse personnelle.
+
+1. Ouvrez la suggestion de réponse et examinez le thread complet et la réponse brouillée.
+1. Pour créer un autre brouillon, modifiez la réponse ou sélectionnez **[!UICONTROL Générer avec l’IA]**.
+1. Pour envoyer la réponse et poursuivre le workflow sortant du prospect, sélectionnez **[!UICONTROL Approuver et envoyer]**.
 
 ## Effectuer des tâches à partir d’un workflow sortant
 
@@ -124,7 +141,7 @@ Sur la vue **[!UICONTROL Prospects engagés]** d’un workflow sortant, un point
 
 * Lorsque vous n’avez aucune tâche à effectuer, la liste affiche un message _Vous êtes tous pris pour aujourd’hui_.
 * Lorsque les filtres ne correspondent à aucune tâche, la liste indique qu’aucune tâche ne correspond à vos filtres.
-* Lorsqu’aucune tâche n’est sélectionnée, le panneau de travail vous invite à sélectionner une tâche pour en afficher les détails.
+* Lorsqu’aucune tâche n’est sélectionnée, le panneau de travail vous invite à sélectionner une tâche. Pour afficher les détails, sélectionnez une tâche.
 
 >[!MORELIKETHIS]
 >

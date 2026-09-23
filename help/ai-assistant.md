@@ -1,12 +1,12 @@
 ---
 title: Utiliser le chat IA
-description: Découvrez comment utiliser le Module de conversation sur l’IA dans Adobe Marketo Qualifier pour effectuer des recherches sur les comptes, rédiger des communications et obtenir des réponses en fonction de vos données de gestion de la relation client, d’engagement et de centre de connaissances.
+description: Découvrez comment utiliser le Module de conversation sur l’IA [!DNL Adobe Marketo Qualifier] de rechercher des comptes, de rédiger des communications et d’obtenir des réponses en fonction de vos données CRM, d’engagement et de votre centre de connaissances.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/LHCHAk0rsNwLsKFhKMlHaLL7xkkCEAKFNDMEonb2TdQ'
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
-    internal-label: Sales Qualifier
+    internal-label: Adobe Marketo Qualifier
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -16,21 +16,21 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '712'
 ht-degree: 1%
 ---
 
 # Conversation sur l’IA
 
-Le Chat IA répond aux questions en langage naturel en fonction de votre contexte de vente. Utilisez-le pour effectuer des recherches sur un compte, préparer un appel, rédiger des communications et hiérarchiser votre travail sans quitter Adobe Marketo Qualifier.
+Le Chat IA répond aux questions en langage naturel en fonction de votre contexte de vente. Utilisez-le pour effectuer des recherches sur un compte, préparer un appel, rédiger un projet de sensibilisation et établir des priorités pour votre travail sans quitter [!DNL Adobe Marketo Qualifier].
 
 ![Bouton Conversation IA](assets/ai-chat.png){width="800" zoomable="yes"}
 
 ## Ouvrir le chat IA
 
-Sélectionnez le bouton flottant **[!UICONTROL Conversation IA]** pour ouvrir le panneau de conversation. Le panneau s’ouvre en regard de la page active afin que vous puissiez garder un prospect, un compte ou un workflow sortant en vue. Faites glisser le bord du panneau pour le redimensionner. Pour fermer le panneau, sélectionnez à nouveau **[!UICONTROL Conversation IA]**.
+Pour ouvrir le panneau de conversation, sélectionnez le bouton flottant **[!UICONTROL Conversation IA]**. Le panneau s’ouvre en regard de la page active afin que vous puissiez garder un prospect, un compte ou un workflow sortant en vue. Pour redimensionner le panneau, faites glisser son bord. Pour fermer le panneau, sélectionnez à nouveau **[!UICONTROL Conversation IA]**.
 
 >[!NOTE]
 >
@@ -58,9 +58,9 @@ Utilisez le Module de conversation sur l’IA pour ces types de tâches :
 
 ## Discutez avec Ask AI sur vos données connectées
 
-Le chat IA peut répondre aux questions sur vos données de qualificateur Marketo, de gestion de la relation client, de [!DNL Marketo], de [!DNL Adobe Journey Optimizer B2B Edition] et de veille économique. Posez une question en langage clair pour rechercher des informations ou extraire le contexte. Le Chat IA lit et génère des rapports sur vos données ; il ne crée, ne modifie et ne lance rien.
+Le Chat IA peut répondre à des questions sur vos données [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] et d’intelligence d’entreprise. Posez une question en langage clair pour rechercher des informations ou récupérer du contexte. Le Chat IA lit et génère des rapports sur vos données ; il ne crée, ne modifie et ne lance rien.
 
-Voici quelques exemples d’invites. Plus vous êtes précis dans votre invite, plus les résultats seront ciblés.
+Voici quelques exemples d’invites. Plus vous êtes précis dans votre invite, plus les résultats sont ciblés.
 
 Prospects et comptes :
 
@@ -72,8 +72,8 @@ Prospects et comptes :
 
 Centre de connaissances :
 
-* « Quelles garanties avons-nous pour traiter les objections de prix ? »
-* « Quels sont nos principaux facteurs de différenciation par rapport à nos concurrents ? »
+* « Quelles garanties sont disponibles pour traiter les objections de prix ? »
+* « Quels sont les principaux facteurs de différenciation par rapport aux concurrents ? »
 * « Répertorier les documents dans le Centre de connaissances. »
 * « Résumer un document. »
 
@@ -93,7 +93,7 @@ CRM :
 [!DNL Adobe Journey Optimizer B2B Edition]:
 
 * « Combien de parcours ai-je ? »
-* « Comment mon audience est-elle segmentée par persona ? »
+* « Comment le persona segmente-t-il mon audience ? »
 * « Quelles pages de destination existent dans mon compte ? »
 * « Quels champs de prospect alimentent la notation ? »
 
@@ -129,10 +129,10 @@ Les réponses générées par l’IA peuvent être inexactes. Examinez tout le c
 * Lisez attentivement les brouillons d&#39;e-mails et personnalisez-les avant de les envoyer.
 * Utiliser la sortie de l&#39;assistant comme point de départ, et non comme livrable terminé.
 
-L’utilisation de l’IA Chat par votre entreprise est régie par les termes de l’IA générative d’Adobe.
+Les termes de l’IA générative d’Adobe régissent l’utilisation du chat IA par votre entreprise.
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Centre de connaissances &#x200B;](admin-settings.md#knowledge-center)
+>* [ Centre de connaissances ](admin-settings.md#knowledge-center)
 >* [Comptes](accounts.md)
 >* [Workflows sortants](outbound-workflows.md)

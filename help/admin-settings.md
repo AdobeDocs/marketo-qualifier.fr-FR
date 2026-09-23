@@ -1,6 +1,6 @@
 ---
 title: Paramètres d’administration
-description: Découvrez comment gérer les champs CRM, la synchronisation des activités, le processus d’opt-out des e-mails et d’autres paramètres d’administration du qualificateur Marketo d’Adobe.
+description: Découvrez comment gérer les champs CRM, la synchronisation des activités, le processus d’opt-out des e-mails et d’autres paramètres d’administration des [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
 TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
@@ -14,9 +14,9 @@ feature_v2:
     internal-label: Administration
 
 internal-label: Administration
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1221'
 ht-degree: 0%
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Utilisez **[!UICONTROL Paramètres d’administration]** pour configurer les intégrations CRM, gérer le Centre de connaissances et configurer le processus de désinscription aux e-mails.
 
-Adobe Marketo Qualifier se connecte à Salesforce ou Microsoft Dynamics 365. La connexion donne au Account Qualification Agent (AQA) une vue cohérente des prospects, comptes, contacts, activités et propriétaires. Marketo Qualifier peut également écrire des activités de sensibilisation et un statut d’opt-out dans le CRM et synchroniser les activités de sensibilisation avec Marketo.
+[!DNL Adobe Marketo Qualifier] se connecte à Salesforce ou Microsoft Dynamics 365. La connexion donne au Account Qualification Agent (AQA) une vue cohérente des prospects, comptes, contacts, activités et propriétaires. Marketo Qualifier peut également écrire des activités de sensibilisation et un statut d’opt-out dans le CRM et synchroniser les activités de sensibilisation avec Marketo.
 
 Pour configurer les connexions CRM, le mappage des champs et la synchronisation des activités, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Paramètres d’administration]** > **[!UICONTROL Connexions CRM]**. Les utilisateurs standard peuvent utiliser les données et les filtres CRM configurés, mais ne peuvent pas modifier ces paramètres. Pour connecter un CRM pour la première fois, voir [Prise en main](getting-started.md#connect-your-crm).
 
@@ -37,8 +37,21 @@ Pour configurer les connexions CRM, le mappage des champs et la synchronisation 
 Marketo Qualifier fonctionne avec votre CRM des manières suivantes :
 
 * **Requêtes CRM MCP** : les requêtes Account Qualification Agent interrogent les données CRM actives afin que les réponses et les informations reflètent l’état actuel de vos enregistrements.
-* **Plug-in intégré** : le plug-in CRM affiche des informations [!DNL Marketo Sales Insights] (MSI) et des données agentiques dans votre CRM. Utilisez le plug-in pour ajouter un prospect au qualificateur Marketo.
+* **Plug-in intégré** : le plug-in CRM affiche des informations [!DNL Marketo Sales Insights] (MSI) et des données agentiques dans votre CRM. Utilisez le plug-in pour ajouter un prospect à [!DNL Marketo Qualifier].
 * **Synchronisation des activités** : lorsqu’un administrateur active **[!UICONTROL Synchronisation des activités]**, les activités d’extension se synchronisent avec le CRM et Marketo.
+
+### Hiérarchiser les prospects dans le plug-in CRM
+
+Le plug-in CRM fournit une page d’accueil par défaut où les représentants peuvent hiérarchiser les prospects sans quitter le CRM. Les onglets disponibles organisent le travail par source et par intention :
+
+* **[!UICONTROL Meilleurs résultats]** : recommandations de leads prêtes à l’emploi.
+* **[!UICONTROL Ma liste de surveillance]** — Leads que vous suivez.
+* **[!UICONTROL Activité Web]** : visites récentes de sites par des prospects connus.
+* **[!UICONTROL Activité Web anonyme]**—Visites de visiteurs non identifiés.
+* **[!UICONTROL Mon e-mail]** : engagement par e-mail associé à vos prospects.
+* **[!UICONTROL Webinaire]**—Inscription au webinaire et activité de présence.
+
+Chaque prospect peut inclure un aperçu d’e-mail [!DNL Marketo], un lien vers les détails du prospect et des recherches sur LinkedIn. Les onglets et les données auxquels vous pouvez accéder dépendent de la configuration de votre plug-in CRM.
 
 ## Étendue de l’accès CRM
 
@@ -55,7 +68,7 @@ Une fois le CRM connecté, sélectionnez **[!UICONTROL Gérer]** pour la connexi
 1. Sélectionnez **[!UICONTROL Ajouter une section]**.
 1. Saisissez un nom et une description de section.
 1. Sélectionnez un type d’entité. **[!UICONTROL Prospects]** est sélectionné par défaut. **[!UICONTROL Contacts]**, **[!UICONTROL Comptes]** et **[!UICONTROL Opportunités]** sont également disponibles.
-1. Sélectionnez les champs du CRM à importer.
+1. Pour importer des champs CRM, sélectionnez les champs.
 
    Chaque ligne de champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
 
@@ -108,15 +121,16 @@ Une fois les règles de synchronisation CRM configurées, les équipes commercia
 
 Le **[!UICONTROL Centre de connaissances]** donne à Account Qualification Agent (AQA) accès à vos documents de vente. Marketo Qualifier utilise ces ressources pour générer des recherches, des informations sur les qualifications et des informations qui reflètent les ventes de votre entreprise. Seuls les administrateurs peuvent créer et gérer le playbook.
 
-![&#x200B; Centre de connaissances &#x200B;](assets/knowledge-center.png){width="800" zoomable="yes"}
+![ Centre de connaissances ](assets/knowledge-center.png){width="800" zoomable="yes"}
 
-1. Dans le volet de navigation de gauche, développez **[!UICONTROL Administration]**, sélectionnez **[!UICONTROL Paramètres d’administration]** et sélectionnez **[!UICONTROL Centre de connaissances]**
-1. u
+1. Dans le volet de navigation de gauche, développez **[!UICONTROL Administration]**, sélectionnez **[!UICONTROL Paramètres d’administration]**, puis sélectionnez **[!UICONTROL Centre de connaissances]**.
 1. Définissez les **[!UICONTROL Nom de la société]** et **[!UICONTROL URL de la société]** que le qualificateur Marketo utilise pour rechercher votre société et rédiger des e-mails.
 1. Chargez des pièces de théâtre commerciales, des profils client idéaux, des guides de positionnement et d’autres documents promotionnels au format PDF, PPTX ou DOCX.
 1. Sélectionnez **[!UICONTROL Créer un playbook]**.
 
-Chaque document chargé affiche son statut de traitement, tel que **[!UICONTROL Prêt]**, et la date de sa dernière mise à jour.
+La page affiche le statut du playbook le plus récemment créé et fournit l’action suivante une fois le contenu chargé. Pour récupérer le dernier statut après une version, sélectionnez **[!UICONTROL Actualiser]**.
+
+Chaque document chargé affiche également son statut de traitement, tel que **[!UICONTROL Prêt]**, et la date de sa dernière mise à jour.
 
 >[!NOTE]
 >
@@ -124,7 +138,7 @@ Chaque document chargé affiche son statut de traitement, tel que **[!UICONTROL 
 
 Lorsque le manuel est prêt, les représentants peuvent l’utiliser à deux endroits :
 
-* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [&#x200B; Générer et réviser des points de contact](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [ Générer et réviser des points de contact](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat IA** : Reportez-vous au Centre de connaissances dans votre question. Par exemple, saisissez `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Voir [Conversation IA](ai-assistant.md).
 
 Dans les deux cas, le contenu généré reflète le message de votre playbook plutôt que la recherche générique.

@@ -1,6 +1,6 @@
 ---
 title: Vérifier la boîte d’envoi d’e-mail
-description: Découvrez comment vérifier les e-mails qu’Adobe Marketo Qualifier a envoyés en votre nom, y compris les réponses, dans la boîte d’envoi d’e-mails.
+description: Découvrez comment vérifier les e-mails que Adobe Marketo Qualifier a envoyés en votre nom, y compris les réponses, dans la boîte d’envoi d’e-mails.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 product_v2:
@@ -11,7 +11,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -33,13 +33,13 @@ Si vous n’avez envoyé aucun e-mail, la liste affiche _Votre boîte d’envoi 
 
 ## Lire un email et ses réponses
 
-Sélectionnez un e-mail dans la liste pour l’ouvrir sur la droite. La vue lecture comporte trois parties :
+Pour ouvrir un e-mail à droite, sélectionnez-le dans la liste. La vue lecture comporte trois parties :
 
 * **Destinataire** : le nom, la fonction et le compte du destinataire, le cas échéant.
-* **Objet et workflow sortant** : l’objet, le nom du [workflow sortant](outbound-workflows.md) qui a envoyé l’e-mail et le statut du workflow sortant. Sélectionnez le nom du workflow sortant pour l’ouvrir.
+* **Objet et workflow sortant** : l’objet, le nom du [workflow sortant](outbound-workflows.md) qui a envoyé l’e-mail et le statut du workflow sortant. Pour ouvrir le workflow sortant, sélectionnez son nom.
 * **Conversation** : l&#39;e-mail envoyé et toutes les réponses dans un thread. Chaque entrée identifie si le message a été envoyé ou reçu et inclut un horodatage.
 
-Les e-mails s’affichent tels qu’ils ont été envoyés, y compris le contenu personnalisé. Si le corps d’un message n’est pas disponible, le qualificateur de Marketo affiche une note courte _contenu d’e-mail non disponible_ à sa place.
+Les e-mails s’affichent tels qu’ils ont été envoyés, y compris le contenu personnalisé. Si le corps d’un message n’est pas disponible, Marketo Qualifier affiche une note courte _Contenu d’e-mail non disponible_ à sa place.
 
 >[!NOTE]
 >
