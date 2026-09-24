@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1383'
 ht-degree: 1%
 ---
 
@@ -56,11 +56,11 @@ Lorsque vous vous connectez, vous approuvez l’accès qui permet au qualificate
 
 Par défaut, aucune action de l’administrateur n’est requise. Chaque représentant approuve l&#39;accès pour lui-même lorsqu&#39;il se connecte à Outlook.
 
-Si votre organisation a désactivé le consentement des utilisateurs pour les applications tierces dans Microsoft 365 ou Microsoft Entra, un administrateur Microsoft 365 ou Entra doit approuver le qualificateur Marketo une seule fois pour l’ensemble de l’organisation. L&#39;administrateur termine cette approbation avant que les représentants ne connectent leurs comptes Outlook. Après l’approbation à l’échelle de l’organisation, chaque représentant peut connecter son compte.
+Si votre organisation a désactivé le consentement des utilisateurs pour les applications tierces dans Microsoft 365 ou Microsoft Entra, un administrateur Microsoft 365 ou Entra doit approuver Marketo Qualifier une seule fois pour l’ensemble de l’organisation. L&#39;administrateur termine cette approbation avant que les représentants ne connectent leurs comptes Outlook. Après l’approbation à l’échelle de l’organisation, chaque représentant peut connecter son compte.
 
-### Gestion des données de boîte aux lettres par le qualificateur Marketo
+### Gestion des données de boîte aux lettres par Marketo Qualifier
 
-Le qualificateur Marketo lit uniquement les réponses aux e-mails qu’il a envoyés, et non le reste de votre boîte de réception. Il ne stocke pas les pièces jointes ou les e-mails entrants en dehors d’un engagement actif. Les informations d’identification de connexion stockées sont chiffrées.
+Marketo Qualifier lit uniquement les réponses aux e-mails qu’il a envoyés, et non le reste de votre boîte de réception. Il ne stocke pas les pièces jointes ou les e-mails entrants en dehors d’un engagement actif. Les informations d’identification de connexion stockées sont chiffrées.
 
 ## Ouvrir les paramètres CRM
 
@@ -91,7 +91,7 @@ Une carte non configurée affiche **[!UICONTROL Connect]**. Une carte configuré
 
 ### Connexion ou modification d’une connexion
 
-1. Sur la carte CRM, sélectionnez **[!UICONTROL Se connecter]** ou sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Modifier la configuration]** pour mettre à jour une connexion existante.
+1. Pour créer une connexion, sélectionnez **[!UICONTROL Connexion]** sur la carte CRM. Pour mettre à jour une connexion existante, sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Modifier la configuration]**.
 1. Saisissez les informations d’identification de votre administrateur CRM.
 
    >[!BEGINTABS]
@@ -119,7 +119,7 @@ Si le qualificateur Marketo rejette les informations d’identification, il iden
 ### Déconnecter une connexion
 
 1. Sur la carte CRM connectée, sélectionnez **[!UICONTROL Plus]** > **[!UICONTROL Déconnecter]**.
-1. Vérifiez l’avertissement et sélectionnez **[!UICONTROL Déconnecter]** pour confirmer.
+1. Vérifiez l’avertissement. Pour confirmer, sélectionnez **[!UICONTROL Déconnecter]**.
 
 >[!WARNING]
 >
@@ -127,7 +127,7 @@ Si le qualificateur Marketo rejette les informations d’identification, il iden
 
 ## Mappage des champs CRM (mapping entrant) {#map-crm-fields-inbound-mapping}
 
-Le mappage entrant contrôle les champs CRM que le qualificateur de Marketo importe et où ils apparaissent. Les champs sont regroupés en sections, chaque section appartenant à un type d&#39;entité.
+Le mappage entrant contrôle les champs CRM que Marketo Qualifier importe et où ils apparaissent. Les champs sont regroupés en sections, chaque section appartenant à un type d&#39;entité.
 
 ![Mappage entrant](assets/crm-conn-salesforce.png){width="800" zoomable="yes"}
 
@@ -146,7 +146,7 @@ Le mappage entrant contrôle les champs CRM que le qualificateur de Marketo impo
    | **[!UICONTROL Opportunités]** | Détails de l’opportunité du compte. |
 
 1. Saisissez un **[!UICONTROL Nom de section]** et un **[!UICONTROL Description]** facultatif. Sélectionnez ensuite **[!UICONTROL Suivant]**.
-1. À l’étape **[!UICONTROL Ajouter un champ]**, recherchez et sélectionnez les champs du CRM à importer. Sélectionnez ensuite **[!UICONTROL Suivant]**. Chaque champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
+1. À l’étape **[!UICONTROL Ajouter un champ]**, pour importer des champs CRM, recherchez et sélectionnez-les. Ensuite, pour continuer, sélectionnez **[!UICONTROL Suivant]**. Chaque champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
 1. Pour les sections **[!UICONTROL Prospects]**, **[!UICONTROL Contacts]** et **[!UICONTROL Opportunités]**, activez **[!UICONTROL Filtrable]** pour chaque champ dont les représentants ont besoin dans la liste [Prospects](prospects.md).
 
    Un champ ne peut pas être filtré si son type de données ne prend pas en charge le filtrage ou s’il est déjà utilisé dans une autre section.
@@ -159,13 +159,13 @@ Pour modifier une section ultérieurement, sélectionnez **[!UICONTROL Modifier]
 
 ## Configuration de la synchronisation des activités (mapping sortant) {#configure-activity-sync-outbound-mapping}
 
-La synchronisation des activités écrit les activités de sensibilisation du qualificateur Marketo dans votre CRM et Marketo. Les activités E-mail envoyé, ouvert, sur lesquelles l’utilisateur a cliqué et a répondu incluent le nom du workflow sortant. Les représentants peuvent voir les activités dans le CRM, tandis que les équipes marketing peuvent utiliser les activités Marketo dans la notation des prospects et les calendriers d’engagement.
+La synchronisation des activités écrit les activités de sensibilisation Marketo Qualifier dans votre CRM et Marketo. Les activités E-mail envoyé, ouvert, sur lesquelles l’utilisateur a cliqué et a répondu incluent le nom du workflow sortant. Les représentants peuvent voir les activités dans le CRM, tandis que les équipes marketing peuvent utiliser les activités Marketo dans la notation des prospects et les calendriers d’engagement.
 
 1. Sur la carte CRM connectée, sélectionnez **[!UICONTROL Gérer]**.
 1. Ouvrez l’onglet **[!UICONTROL Mappage sortant]**.
 1. Activez **[!UICONTROL Synchronisation des activités]**. Le paramètre est enregistré immédiatement.
 
-Lorsque la synchronisation des activités est désactivée, le qualificateur de Marketo continue à utiliser les données CRM entrantes, mais ne synchronise pas les activités de sensibilisation au CRM ou à Marketo.
+Lorsque la synchronisation des activités est désactivée, Marketo Qualifier continue à utiliser les données CRM entrantes, mais ne synchronise pas les activités de sensibilisation au CRM ou à Marketo.
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Lorsque la synchronisation des activités est désactivée, le qualificateur de 
 
 Les points forts marketing permettent aux représentants de trouver et de classer les prospects par engagement direct [!DNL Marketo], tel que les ouvertures d’e-mail et les clics. Voir [&#x200B; Filtrer par points forts marketing &#x200B;](prospects.md#filter-by-marketing-highlights).
 
-Un administrateur effectue une configuration unique qui connecte [!DNL Marketo] au qualificateur Marketo pour l’organisation et le sandbox appropriés. La configuration couvre la création d’informations d’identification d’API dans Adobe Developer Console, la configuration d’un webhook dans [!DNL Marketo] et l’ajout de ce webhook à un déclencheur Smart Campaign. Voir [Configurer les points forts marketing](marketing-highlights-setup.md) pour obtenir des instructions complètes.
+Un administrateur effectue une configuration unique qui connecte [!DNL Marketo] à Marketo Qualifier pour l’organisation et le sandbox appropriés. La configuration couvre la création d’informations d’identification d’API dans Adobe Developer Console, la configuration d’un webhook dans [!DNL Marketo] et l’ajout de ce webhook à un déclencheur Smart Campaign. Voir [Configurer les points forts marketing](marketing-highlights-setup.md) pour obtenir des instructions complètes.
 
 Les points forts marketing sont disponibles dans toutes les régions de production : Amérique du Nord, EMEA et Australie.
 
@@ -192,16 +192,16 @@ Le paramètre d’opt-out ajoute un pied de page de désabonnement à chaque e-m
 
 Le paramètre et le modèle sont enregistrés automatiquement.
 
-Lorsqu’un prospect sélectionne le lien, le qualificateur Marketo cesse d’envoyer des e-mails à ce prospect et synchronise le statut d’opt-out sur le CRM connecté.
+Lorsqu’un prospect sélectionne le lien, Marketo Qualifier cesse d’envoyer des e-mails à ce prospect et synchronise le statut d’opt-out avec le CRM connecté.
 
 ## Étendue de l’accès CRM
 
-Le qualificateur Marketo lit les entités CRM dont il a besoin et n’écrit qu’un ensemble défini de données :
+Marketo Qualifier lit les entités CRM dont il a besoin et n’écrit qu’un ensemble défini de données :
 
 * **Lecture**—Utilisateurs, contacts, mappages de propriétaires, prospects, comptes, opportunités et activités.
 * **Écriture** : activités de sensibilisation consignées (lorsque [synchronisation des activités](#configure-activity-sync-outbound-mapping) est activé) et statut d’exclusion.
 
-Votre administrateur CRM prépare l’accès à l’API dans Salesforce ou Dynamics. Un administrateur Marketo Qualifier connecte ensuite le CRM, mappe les champs entrants et choisit de synchroniser ou non les activités. La connexion initiale nécessite un accès en lecture seule. La synchronisation des activités et l’écriture différée du processus d’opt-out nécessitent l’accès en écriture correspondant.
+Votre administrateur CRM prépare l’accès à l’API dans Salesforce ou Dynamics. Un administrateur Marketo Qualifier se connecte ensuite au CRM, mappe les champs entrants et choisit de synchroniser ou non les activités. La connexion initiale nécessite un accès en lecture seule. La synchronisation des activités et l’écriture différée du processus d’opt-out nécessitent l’accès en écriture correspondant.
 
 >[!MORELIKETHIS]
 >

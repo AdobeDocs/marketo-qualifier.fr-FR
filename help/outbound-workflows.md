@@ -1,6 +1,6 @@
 ---
 title: Créer et gérer des workflows sortants
-description: Découvrez comment créer, partager, réviser et gérer des workflows sortants générés par l’IA dans Adobe Marketo Qualifier pour exécuter des cadences de sensibilisation axées sur des objectifs.
+description: Découvrez comment créer, partager, réviser et gérer des workflows sortants générés par l’IA dans [!DNL Adobe Marketo Qualifier] d’exécuter des cadences de sensibilisation pilotées par les objectifs.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '2064'
+source-wordcount: '2271'
 ht-degree: 0%
 ---
 
@@ -67,12 +67,14 @@ Les administrateurs peuvent affecter le workflow sortant à un coéquipier plut�
 
 L’objectif définit le résultat prévu et guide le ciblage, la cadence et la génération d’e-mails.
 
-1. Sélectionnez **[!UICONTROL Démarrer à partir de zéro]** pour écrire votre propre objectif, ou sélectionnez **[!UICONTROL Démarrer à partir d’un modèle]** pour utiliser un modèle enregistré.
+1. Pour créer votre propre objectif, sélectionnez **[!UICONTROL Démarrer à partir de zéro]** ou, pour utiliser un modèle enregistré, sélectionnez **[!UICONTROL Démarrer à partir d’un modèle]**.
 
-1. Sélectionnez l’un des **[!UICONTROL Objectifs recommandés]** correspondant à votre entreprise. Chaque recommandation comprend une brève explication de sa pertinence. Sélectionnez une recommandation pour remplir l’objectif, sélectionnez **[!UICONTROL Afficher tout]** pour parcourir l’ensemble complet des recommandations ou saisissez votre propre objectif. Vous pouvez également choisir dans la liste **[!UICONTROL Objectifs populaires]**.
+1. Sélectionnez l’un des **[!UICONTROL Objectifs recommandés]** correspondant à votre entreprise. Chaque recommandation comprend une brève explication de sa pertinence. Pour renseigner l’objectif, sélectionnez une recommandation. Pour parcourir l’ensemble complet des recommandations, sélectionnez **[!UICONTROL Afficher tout]** ou saisissez votre propre objectif. Vous pouvez également choisir dans la liste **[!UICONTROL Objectifs populaires]**.
 1. Sélectionnez **[!UICONTROL Suivant : Ciblage]**.
 
 Indiquez un résultat spécifique dans l’objectif. Par exemple, saisissez `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` au lieu de `Promote campaign automation`.
+
+L’IA conserve les exigences de l’objectif exactement dans les points de contact générés. Insérez des phrases exactes, les lignes d’ouverture ou de fermeture requises, les sessions et les dates nommées ou une structure spécifique lorsque le contenu généré doit les conserver.
 
 ### Étape 2 : Configuration des filtres de ciblage
 
@@ -80,12 +82,29 @@ Les filtres de ciblage définissent les prospects éligibles. Lorsque vous ajout
 
 ![&#x200B; Filtres de ciblage &#x200B;](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
 
-1. Sélectionnez la flèche vers le bas pour ouvrir la liste **[!UICONTROL Ajouter un filtre]**, puis sélectionnez un filtre.
+Décrivez votre prospect idéal en langage naturel. Par exemple, saisissez `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] convertit la description en critères de ciblage que vous pouvez examiner et affiner.
+
+1. Pour ouvrir la liste **[!UICONTROL Ajouter un filtre]**, sélectionnez la flèche vers le bas, puis un filtre.
 
 1. Définissez des valeurs pour le filtre.
 1. Ajoutez d’autres filtres si vous devez limiter l’audience.
 
 1. Sélectionnez **[!UICONTROL Suivant : générer des points de contact]**.
+
+Le ciblage peut utiliser le type d’activité, le score, l’évaluation et d’autres attributs disponibles. Combinez des critères avec [!DNL AND] ou [!DNL OR] et utilisez des opérateurs tels que égal à, contient, supérieur à, inférieur à et entre.
+
+### Inscrire automatiquement les prospects aux activités marketing
+
+Un workflow sortant peut évaluer l’activité des points forts marketing en direct par rapport à ses critères de ciblage. Lorsque l’activité correspond, [!DNL Marketo Qualifier] résout le propriétaire du CRM du prospect par e-mail et l’inscrit uniquement dans un workflow éligible qui appartient à ce représentant.
+
+L’inscription automatique suit cette séquence :
+
+1. Un représentant définit les critères de ciblage du workflow.
+1. L’activité Live [!DNL Marketo] arrive pour un prospect.
+1. [!DNL Marketo Qualifier] résout le propriétaire du prospect à partir de Salesforce ou Microsoft Dynamics et évalue l’activité par rapport aux workflows éligibles du propriétaire.
+1. Lorsque les critères correspondent, le prospect est inscrit et la diffusion commence.
+
+Si un autre représentant contacte déjà le prospect, [!DNL Marketo Qualifier] affiche un avertissement avant le début de la diffusion en double.
 
 ### Étape 3 : génération et révision des points de contact
 
@@ -147,7 +166,7 @@ L’enregistrement ouvre la vue de sélection des prospects avec les filtres de 
 
 1. Ajustez les filtres ici si vous devez développer ou réduire la liste.
 1. Sélectionnez des prospects à l’aide des cases à cocher.
-1. Sélectionnez **[!UICONTROL Suivant : consulter les points de contact]** pour commencer la génération d’e-mails par prospect.
+1. Pour commencer la génération d’e-mails par prospect, sélectionnez **[!UICONTROL Suivant : vérifier les points de contact]**.
 
 L’IA génère un e-mail personnalisé pour chaque prospect et point de contact d’e-mail sélectionné. Les points de contact Phone et LinkedInMail restent des étapes planifiées. Pour continuer à travailler pendant la génération, sélectionnez **[!UICONTROL Notifier lorsque prêt]**.
 
@@ -159,14 +178,14 @@ Les e-mails peuvent également être générés dans la langue du prospect, avec
 
 ## Consulter et affiner les e-mails générés
 
-Une fois la génération terminée, la vue détaillée du workflow sortant vous invite à consulter les brouillons. Le qualificateur Marketo d’Adobe n’envoie pas d’e-mail tant que vous ne l’avez pas approuvé.
+Une fois la génération terminée, la vue détaillée du workflow sortant vous invite à consulter les brouillons. [!DNL Marketo Qualifier] n’envoie pas d’e-mail tant que vous ne l’avez pas approuvé.
 
 1. Dans la vue détaillée du workflow sortant, sélectionnez **[!UICONTROL Vérifier les brouillons]** dans la bannière.
 1. L’étape **[!UICONTROL Vérifier les points de contact]** comporte deux onglets :
    * **[!UICONTROL Prêt pour la révision]** : les e-mails dont la génération est terminée.
    * **[!UICONTROL Génération]** : les e-mails en cours d’écriture.
-1. Dans la liste des prospects à gauche, sélectionnez un nom pour charger les points de contact de ce prospect à droite.
-1. Utilisez le chevron (**>**) sur un point de contact pour développer et lire l’objet et le corps complets.
+1. Pour charger les points de contact d’un prospect sur la droite, sélectionnez son nom dans la liste de gauche.
+1. Pour développer un point de contact et lire l’objet et le corps complets, utilisez son chevron (**>**).
 
 ### Lire le raisonnement de l’IA
 
@@ -176,7 +195,7 @@ Pour chaque e-mail généré, la section **[!UICONTROL REASONING]** explique com
 
 Pour les petits changements de libellé ou de ton :
 
-1. Sur le point de contact développé, sélectionnez l’icône **[!UICONTROL Modifier]** pour ouvrir l’éditeur.
+1. Pour ouvrir l’éditeur, sélectionnez l’icône **[!UICONTROL Modifier]** sur le point de contact développé.
 1. Modifiez l’objet ou le corps.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -208,13 +227,15 @@ Les e-mails approuvés sont envoyés en fonction des jours sélectionnés du wor
 
 ## Partage d’un workflow sortant
 
-Chaque workflow sortant comporte un paramètre **[!UICONTROL Autorisations]**. Les workflows sortants sont **[!UICONTROL privés]** par défaut. Le propriétaire peut sélectionner **[!UICONTROL Partagé avec tout le monde]** pour rendre un workflow sortant disponible pour l’équipe.
+Chaque workflow sortant comporte un paramètre **[!UICONTROL Autorisations]**. Les workflows sortants sont **[!UICONTROL privés]** par défaut. Pour mettre un workflow sortant à la disposition de l&#39;équipe, le propriétaire peut sélectionner **[!UICONTROL Partagé avec tout le monde]**.
 
 >[!CAUTION]
 >
 >Le partage est permanent. Une fois qu’un workflow sortant est défini sur **[!UICONTROL Partagé avec tout le monde]**, il ne peut pas être redéfini sur **[!UICONTROL Privé]**.
 
 Sur un workflow sortant partagé, les coéquipiers peuvent inscrire leurs propres prospects. Chaque personne ne peut gérer ou suspendre que les prospects auxquels elle est inscrite, y compris lors de l’utilisation d’actions en masse. Le propriétaire du workflow sortant peut seul modifier les paramètres au niveau du plan, notamment la planification, le fuseau horaire et le rythme. Ces paramètres sont en lecture seule pour les coéquipiers.
+
+Lorsque vous inscrivez des prospects à un workflow sortant partagé, choisissez si l’e-mail est envoyé en tant que propriétaire du workflow ou représentant affecté de chaque prospect.
 
 Utilisez ces filtres pour que les workflows sortants partagés et les résultats restent ciblés :
 

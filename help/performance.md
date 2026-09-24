@@ -8,7 +8,7 @@ product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
 Outbound Workflows    internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Performances sortantes dans le qualificateur Adobe Marketo
 
-Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Performances sortantes]** pour effectuer le suivi de l’activité sortante et des résultats au sein de votre équipe. Le tableau de bord comporte deux vues : **[!UICONTROL Performances de l’organisation]** et **[!UICONTROL Performances de la campagne]**.
+Pour suivre l’activité sortante et les résultats au sein de votre équipe, sélectionnez **[!UICONTROL Performances sortantes]** dans le volet de navigation de gauche. Le tableau de bord comporte deux vues : **[!UICONTROL Performances de l’organisation]** et **[!UICONTROL Performances de la campagne]**.
 
 ![Performance sortante](assets/outbound-performance.png){width="800" zoomable="yes"}
 
@@ -24,7 +24,7 @@ Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Performances 
 
 Ces commandes s’appliquent à la fois aux vues et à tous les onglets :
 
-* **[!UICONTROL Filtres]** : sélectionnez **[!UICONTROL Filtres]** pour affiner le tableau de bord par membre de l’équipe et campagne.
+* **[!UICONTROL Filtres]** : pour limiter le tableau de bord par membre de l’équipe et campagne, sélectionnez **[!UICONTROL Filtres]**.
 * **[!UICONTROL Période]** : sélectionnez une période de création de rapports de 7, 15, 30, 60, 90, 180 ou 365 jours.
 
 ## Performances de l’organisation
@@ -44,11 +44,11 @@ L’onglet **[!UICONTROL Aperçu]** résume les résultats sortants. Cliquez sur
 
 L’onglet **[!UICONTROL E-mails]** indique le volume et l’efficacité des e-mails :
 
-* **Mosaïques** : taux d’ouverture et de clics, affichés par défaut, afin que les performances soient comparables entre les campagnes de différents volumes. Sélectionnez le bouton (bascule) pour afficher le nombre brut d’e-mails envoyés, ouverts, sur lesquels l’utilisateur a cliqué et auxquels il a répondu à la place.
+* **Mosaïques** : taux d’ouverture et de clics, affichés par défaut, afin que les performances soient comparables entre les campagnes de différents volumes. Pour afficher le nombre brut d’e-mails envoyés, ouverts, ayant fait l’objet d’un clic et auxquels une réponse a été donnée, sélectionnez le bouton (bascule).
 * **Graphique de tendance hebdomadaire des e-mails** : activité E-mail par semaine.
 * Tableau des performances des e-mails par représentant.
 
-Le qualificateur Marketo attribue des statuts distincts aux réponses d’absence du bureau et aux bounces afin que vous puissiez les distinguer de l’engagement des prospects.
+Marketo Qualifier attribue des statuts distincts aux réponses d&#39;absence du bureau et aux bounces afin que vous puissiez les distinguer de l&#39;engagement des prospects.
 
 ### Onglet Tâches
 
@@ -62,7 +62,7 @@ L’onglet **[!UICONTROL Tâches]** rend compte de la portée manuelle :
 
 **[!UICONTROL Performances de la campagne]** génère des rapports sur les résultats sortants par campagne de workflow sortante :
 
-* **Mosaïques d’indicateurs clés de performance** : prospects actifs, taux d’ouverture, taux de clics, taux de réponse et réunions réservées. Le système affiche par défaut le taux d’ouverture et de clic afin que les performances soient comparables entre les campagnes de différents volumes. Sélectionnez plutôt le bouton pour afficher les nombres bruts.
+* **Mosaïques d’indicateurs clés de performance** : prospects actifs, taux d’ouverture, taux de clics, taux de réponse et réunions réservées. Le système affiche par défaut le taux d’ouverture et de clic afin que les performances soient comparables entre les campagnes de différents volumes. Pour afficher les nombres bruts à la place, sélectionnez le bouton (bascule).
 * **Graphique de tendance des mesures Campaign** : KPI de la campagne sur la période sélectionnée.
 * **[!UICONTROL Campagnes]** tableau : activité E-mail, réunion, appel et Message LinkedIn pour chaque campagne. Pour afficher les détails au niveau du représentant d’une campagne, développez sa ligne.
 

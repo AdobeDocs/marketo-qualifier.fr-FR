@@ -21,7 +21,7 @@ topic_v2:
     internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Ces étapes sont effectuées dans le Adobe Admin Console.
 1. Ouvrez **[!UICONTROL Profils de produit attribués]** et sélectionnez **[!UICONTROL Attribuer le profil]**.
 1. Sélectionnez **&#x200B;**.
 1. Sélectionnez le profil de produit **[!UICONTROL Accès à tous les produits de production par défaut]**, sélectionnez **[!UICONTROL Appliquer]**, puis sélectionnez **[!UICONTROL Enregistrer]**.
-1. Ouvrez **[!UICONTROL Utilisateurs]** et sélectionnez **[!UICONTROL Ajouter des utilisateurs]** pour ajouter tous ceux qui doivent accéder au qualificateur Marketo.
+1. Pour ajouter tous ceux qui ont besoin d’accéder à Marketo Qualifier, ouvrez **[!UICONTROL Utilisateurs]** et sélectionnez **[!UICONTROL Ajouter des utilisateurs]**.
 
 ### Administrateurs Marketo Qualifier
 
@@ -169,7 +169,7 @@ Un administrateur Microsoft Dynamics 365 ou Azure enregistre une application et 
 
 ### Importer les champs du CRM
 
-Après la connexion au CRM, configurez le mappage entrant pour déterminer quels champs CRM apparaissent dans le qualificateur Marketo. Sur la carte CRM connectée, sélectionnez **[!UICONTROL Gérer]** pour ouvrir **[!UICONTROL Mapping entrant]**, puis ajoutez une section pour chaque type d’entité dont vous souhaitez importer les champs.
+Après la connexion au CRM, configurez le mappage entrant pour déterminer quels champs CRM apparaissent dans le qualificateur Marketo. Pour ouvrir **[!UICONTROL Mapping entrant]**, sélectionnez **[!UICONTROL Gérer]** sur la carte CRM connectée, puis ajoutez une section pour chaque type d’entité dont vous souhaitez importer les champs.
 
 Consultez la section [Mappage des champs CRM (mappage entrant)](integrations.md#map-crm-fields-inbound-mapping) pour obtenir des instructions complètes, notamment sur la manière de rendre les champs importés disponibles sous forme de filtres.
 

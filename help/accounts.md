@@ -14,9 +14,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: d967b633fcb63c64169d3e3fbf305fd2ff82236d
+source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 0%
 ---
 
@@ -50,7 +50,7 @@ L’onglet **[!UICONTROL Détails]** vous donne un instantané du compte et de s
 La carte d’aperçu située en haut de l’onglet identifie le compte et résume sa valeur :
 
 * Nom du compte et région
-* **Chiffre d’affaires annuel récurrent (ARR)** : chiffre d’affaires annuel récurrent pour tous les abonnements actifs. Sélectionnez **[!UICONTROL Afficher tout]** pour consulter le montant total autorisé par produit dans la boîte de dialogue **[!UICONTROL Revenus récurrents annuels]**.
+* **Chiffre d’affaires annuel récurrent (ARR)** : chiffre d’affaires annuel récurrent pour tous les abonnements actifs. Pour consulter le montant total autorisé par produit dans la boîte de dialogue **[!UICONTROL Revenus récurrents annuels]**, sélectionnez **[!UICONTROL Afficher tout]**.
 * Statistiques du compte, y compris le nombre d’opportunités ouvertes et de contacts et la valeur du pipeline
 
 ### Résumé de l’aperçu du compte
@@ -63,7 +63,7 @@ Utilisez les boutons situés sous la vue d’ensemble pour basculer entre les vu
 
 | Affichage | Ce qu’il montre |
 | --- | --- |
-| **[!UICONTROL Opportunités]** | Opportunités ouvertes liées au compte, avec des champs clés pour chacune. Sélectionnez **[!UICONTROL Afficher tout]** pour afficher la liste complète dans un tableau. Les détails de l’opportunité, tels que l’étape, le type et la date de fermeture, peuvent également être utilisés pour filtrer les contacts du compte dans **[!UICONTROL Mes contacts d’opportunité]** lorsqu’un administrateur rend ces champs filtrables. |
+| **[!UICONTROL Opportunités]** | Opportunités ouvertes liées au compte, avec des champs clés pour chacune. Pour afficher la liste complète dans un tableau, sélectionnez **[!UICONTROL Afficher tout]**. Les détails de l’opportunité, tels que l’étape, le type et la date de fermeture, peuvent également être utilisés pour filtrer les contacts du compte dans **[!UICONTROL Mes contacts d’opportunité]** lorsqu’un administrateur rend ces champs filtrables. |
 | **[!UICONTROL Membres principaux]** | Les contacts les plus engagés du compte, classés par engagement. Chaque contact affiche son intitulé de poste, son adresse e-mail, son score d’engagement et son indicateur d’urgence. |
 | **[!UICONTROL Données d’intention]** | Signaux d’intention d’achat pour le compte, tels que les produits et les sujets sur lesquels le compte fait des recherches. |
 | **[!UICONTROL Membres de l’équipe de compte]** | Personnes affectées au compte, avec leur adresse e-mail, fonction, territoire et groupe de produits. |
@@ -78,7 +78,7 @@ Dans la vue **[!UICONTROL Membres principaux]**, effectuez l’une des actions s
 
 L’onglet **[!UICONTROL Recherche de compte]** contient trois zones :
 
-* **[!UICONTROL Catégories de recherche]**—Thèmes de recherche. Sélectionnez une catégorie pour afficher sa recherche dans le volet central.
+* **[!UICONTROL Catégories de recherche]**—Thèmes de recherche. Pour afficher la recherche d’une catégorie dans le volet central, sélectionnez la catégorie.
 * **Contenu de la recherche** - Cartes de recherche générées par l&#39;IA regroupées par catégorie. Une carte peut inclure le domaine source et les dates de la première et de la dernière détection du signal.
 * **[!UICONTROL Informations récentes]** : informations à jour sur le compte, notamment les dates, les balises et les liens sources.
 
