@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/4IsAlgFBxddHCz0-CLCDXPCHI7m3motiXhgCR6MZq0k'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -17,7 +17,7 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 18%
@@ -39,7 +39,7 @@ L’application fait partie de la famille de produits [!DNL Marketo], avec [!DNL
 * **Posez vos questions en langage naturel** avec le Module de conversation sur l’IA, qui utilise vos données de gestion de la relation client, d’engagement et de centre de connaissances.
 * **Suivre les performances de la sensibilisation** avec des rapports sur les e-mails et les réservations de réunions.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476563?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3476550)
 
 ## Utiliser la page d’accueil
 
@@ -51,7 +51,7 @@ La page d’accueil affiche également les tâches à venir et les workflows sor
 
 ::::landing-cards-container
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Commencer
 
@@ -61,7 +61,7 @@ Effectuez la configuration d’administration unique pour les groupes d’utilis
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Prospects
 
@@ -71,7 +71,7 @@ Créez, filtrez et examinez votre liste de prospects.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Comptes
 
@@ -81,7 +81,7 @@ Privilégiez la sensibilisation avec le pipeline au niveau du compte et les donn
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Workflows sortants
 
@@ -91,7 +91,7 @@ Créez des cadences axées sur les objectifs avec des e-mails personnalisés gé
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Tâches
 
@@ -101,7 +101,7 @@ Traitez les tâches d’appel téléphonique, LinkedInMail et de révision d’e
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Performance
 
@@ -111,7 +111,7 @@ Vérifiez les performances des e-mails et des réservations de réunions.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centre de connaissances
 
@@ -121,7 +121,7 @@ Créez un playbook qui étaye la sensibilisation et l’assistance de l’IA dan
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Intégrations
 
@@ -131,7 +131,7 @@ Connectez Salesforce ou Microsoft Dynamics 365 et mappez vos champs.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Paramètres de profil
 
@@ -141,7 +141,7 @@ Configurez la disponibilité de vos e-mails, signatures et calendriers.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Conversation sur l’IA
 

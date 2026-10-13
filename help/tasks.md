@@ -5,14 +5,14 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/MbTN1r-ARrW-XYtdIS-KZT7K1Lk-B3GihT8iXL60GrQ'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '1086'
 ht-degree: 0%
@@ -111,7 +111,7 @@ Pour examiner une suggestion dans le panneau de travail, sélectionnez-la :
 
 Deux actions sont disponibles :
 
-* **[!UICONTROL Vérifier les prospects]**—Ouvrez le workflow sortant pour vérifier et inscrire les prospects recommandés. Voir [&#x200B; Ajouter des prospects et commencer la génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
+* **[!UICONTROL Vérifier les prospects]**—Ouvrez le workflow sortant pour vérifier et inscrire les prospects recommandés. Voir [ Ajouter des prospects et commencer la génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
 * **[!UICONTROL Marquer comme terminé]**—Ignorez la suggestion après l&#39;avoir examinée.
 
 L’onglet **[!UICONTROL Suggestions d’agent]** comprend les filtres de statut **[!UICONTROL Actuel]**, **[!UICONTROL Terminé]** et **[!UICONTROL Annulé]**, un filtre Workflow sortant et un tri par date de création.

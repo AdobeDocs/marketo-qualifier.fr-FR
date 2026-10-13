@@ -1,20 +1,20 @@
 ---
-title: Performances sortantes dans le qualificateur Adobe Marketo
+title: Performances sortantes dans Adobe Marketo Qualifier
 description: Découvrez comment passer en revue les rapports Performances de l’organisation et Performances de la campagne dans Adobe Marketo Qualifier pour effectuer le suivi de l’activité sortante et des résultats.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/ofBw7JHKkkQaPOeUZ6rreLDAhAfineLveBeVYK-CerQ'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 Outbound Workflows    internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
 ---
 
-# Performances sortantes dans le qualificateur Adobe Marketo
+# Performances sortantes dans Adobe Marketo Qualifier
 
 Pour suivre l’activité sortante et les résultats au sein de votre équipe, sélectionnez **[!UICONTROL Performances sortantes]** dans le volet de navigation de gauche. Le tableau de bord comporte deux vues : **[!UICONTROL Performances de l’organisation]** et **[!UICONTROL Performances de la campagne]**.
 

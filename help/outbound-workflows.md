@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/n3FbuiM2zF9QSqaKx1bhBSdbsf-w7vEsEGjCQTBo3g4'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2692'
 ht-degree: 0%
 ---
 
@@ -56,31 +56,31 @@ Les sections suivantes expliquent comment créer un workflow sortant, passer en 
 
 ## Création d’un workflow sortant
 
-L’assistant Workflow sortant se compose de cinq étapes : **[!UICONTROL Objectif]**, **[!UICONTROL Ciblage]**, **[!UICONTROL Générer des points de contact]**, **[!UICONTROL Paramètres]** et **[!UICONTROL Ajouter des prospects]**. Votre objectif façonne les étapes restantes.
+L’expérience de configuration compacte organise la configuration des workflows autour des objectifs, du ciblage, des points de contact et des paramètres. Utilisez la navigation de section pour vous déplacer entre eux. Après avoir enregistré le workflow, ajoutez les prospects pour générer leurs e-mails.
 
 1. Dans le volet de navigation de gauche, sélectionnez **[!UICONTROL Workflows sortants]**.
 1. Dans l’onglet **[!UICONTROL Parcourir]**, sélectionnez **[!UICONTROL + Créer un workflow sortant]** dans le coin supérieur droit.
 
 Les administrateurs peuvent affecter le workflow sortant à un coéquipier plutôt qu’à eux-mêmes. Avant de lancer le workflow, sélectionnez **[!UICONTROL Affecter un utilisateur]** dans la liste déroulante et choisissez votre coéquipier.
 
-### Étape 1 : définir votre objectif
+### Définir votre objectif {#step-1-define-your-goal}
 
 L’objectif définit le résultat prévu et guide le ciblage, la cadence et la génération d’e-mails.
 
 1. Pour créer votre propre objectif, sélectionnez **[!UICONTROL Démarrer à partir de zéro]** ou, pour utiliser un modèle enregistré, sélectionnez **[!UICONTROL Démarrer à partir d’un modèle]**.
 
 1. Sélectionnez l’un des **[!UICONTROL Objectifs recommandés]** correspondant à votre entreprise. Chaque recommandation comprend une brève explication de sa pertinence. Pour renseigner l’objectif, sélectionnez une recommandation. Pour parcourir l’ensemble complet des recommandations, sélectionnez **[!UICONTROL Afficher tout]** ou saisissez votre propre objectif. Vous pouvez également choisir dans la liste **[!UICONTROL Objectifs populaires]**.
-1. Sélectionnez **[!UICONTROL Suivant : Ciblage]**.
+1. Continuez vers le ciblage.
 
 Indiquez un résultat spécifique dans l’objectif. Par exemple, saisissez `Book a 15-minute discovery call with marketing leaders evaluating campaign automation` au lieu de `Promote campaign automation`.
 
 L’IA conserve les exigences de l’objectif exactement dans les points de contact générés. Insérez des phrases exactes, les lignes d’ouverture ou de fermeture requises, les sessions et les dates nommées ou une structure spécifique lorsque le contenu généré doit les conserver.
 
-### Étape 2 : Configuration des filtres de ciblage
+### Configuration des filtres de ciblage {#step-2-configure-targeting-filters}
 
 Les filtres de ciblage définissent les prospects éligibles. Lorsque vous ajoutez des prospects ultérieurement, seuls ceux qui correspondent à ces filtres apparaissent dans la liste de sélection.
 
-![&#x200B; Filtres de ciblage &#x200B;](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
+![ Filtres de ciblage ](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
 
 Décrivez votre prospect idéal en langage naturel. Par exemple, saisissez `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] convertit la description en critères de ciblage que vous pouvez examiner et affiner.
 
@@ -89,7 +89,7 @@ Décrivez votre prospect idéal en langage naturel. Par exemple, saisissez `Hot 
 1. Définissez des valeurs pour le filtre.
 1. Ajoutez d’autres filtres si vous devez limiter l’audience.
 
-1. Sélectionnez **[!UICONTROL Suivant : générer des points de contact]**.
+1. Accédez aux points de contact.
 
 Le ciblage peut utiliser le type d’activité, le score, l’évaluation et d’autres attributs disponibles. Combinez des critères avec [!DNL AND] ou [!DNL OR] et utilisez des opérateurs tels que égal à, contient, supérieur à, inférieur à et entre.
 
@@ -106,9 +106,11 @@ L’inscription automatique suit cette séquence :
 
 Si un autre représentant contacte déjà le prospect, [!DNL Marketo Qualifier] affiche un avertissement avant le début de la diffusion en double.
 
-### Étape 3 : génération et révision des points de contact
+### Configurer les points de contact {#step-3-generate-and-review-touchpoints}
 
 Une fois le ciblage configuré, l’IA analyse l’objectif et les critères de ciblage, définit la cadence et écrit une invite pour chaque point de contact. Le rythme peut inclure des étapes d’e-mail, d’appel téléphonique et LinkedInMail.
+
+Les points de contact utilisent une disposition de séquence qui facilite l’analyse de l’ordre des étapes.
 
 ![Points de contact](assets/create-workflow-touchpoints.png){width="800" zoomable="yes"}
 
@@ -132,15 +134,15 @@ Définissez un délai du point de contact en jours, heures et minutes. Définiss
 
 Si votre entreprise a créé un playbook [Centre de connaissances](admin-settings.md#knowledge-center), reportez-vous à celui-ci dans l’invite. Nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`.
 
-Lorsque le rythme et les invites sont prêts, sélectionnez **[!UICONTROL Suivant : Paramètres]**.
+Lorsque la cadence et les invites sont prêtes, passez aux paramètres.
 
 Affinez les invites de point de contact avant de générer les e-mails de prospect. L’IA utilise ces invites pour chaque prospect sélectionné.
 
-### Étape 4 : configurer les paramètres du workflow sortant
+### Configurer les paramètres du workflow sortant {#step-4-configure-outbound-workflow-settings}
 
-L’étape **[!UICONTROL Paramètres]** contrôle le fonctionnement du workflow sortant.
+La section **[!UICONTROL Paramètres]** contrôle le fonctionnement du workflow sortant.
 
-![&#x200B; Panneau Paramètres &#x200B;](assets/create-workflow-settings.png){width="800" zoomable="yes"}
+![ Panneau Paramètres ](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
 1. Vérifiez le **[!UICONTROL nom du workflow sortant]** et modifiez-le si nécessaire.
 1. Dans **[!UICONTROL Nombre maximal de prospects par workflow sortant]**, confirmez le nombre maximal de prospects que le workflow sortant peut gérer en même temps.
@@ -150,15 +152,15 @@ L’étape **[!UICONTROL Paramètres]** contrôle le fonctionnement du workflow 
 1. Pour arrêter automatiquement les points de contact de suivi une fois qu’un prospect a réservé une réunion, activez **[!UICONTROL Pause de la réservation de réunion]**.
 1. Choisissez d’utiliser le fuseau horaire de chaque prospect ou le fuseau horaire du workflow sortant **[!UICONTROL Fuseau horaire]** pour la planification de l’envoi. Si vous utilisez le fuseau horaire du workflow sortant, vérifiez qu’il correspond à votre audience.
 1. Sous **[!UICONTROL Autorisations]**, conservez **[!UICONTROL Privé]** (valeur par défaut) ou sélectionnez **[!UICONTROL Partagé avec tout le monde]**. Pour plus d’informations, voir [Partager un workflow sortant](#share-an-outbound-workflow).
-1. Sélectionnez **[!UICONTROL Enregistrer et ajouter des prospects]**.
+1. Sélectionnez **[!UICONTROL Enregistrer et ajouter des prospects]** pour ouvrir la vue de sélection des prospects.
 
 Pour rétablir les valeurs par défaut de la fenêtre d’envoi, du fuseau horaire, des jours, des règles de suivi et d’absence du bureau, de la visibilité et de la cadence des suggestions, activez **[!UICONTROL Réinitialiser aux paramètres par défaut]**. Le nom du workflow sortant reste inchangé.
 
-Un administrateur configure globalement le pied de page d’opt-out, qui s’applique aux e-mails sortants indépendamment des paramètres du workflow sortant. Voir [&#x200B; Configuration du processus d’opt-out global des e-mails](integrations.md#configure-global-email-opt-out).
+Un administrateur configure globalement le pied de page d’opt-out, qui s’applique aux e-mails sortants indépendamment des paramètres du workflow sortant. Voir [ Configuration du processus d’opt-out global des e-mails](integrations.md#configure-global-email-opt-out).
 
-### Étape 5 : ajouter des prospects et commencer la génération d’e-mails
+### Ajouter des prospects et commencer la génération d’e-mails {#step-5-add-prospects-and-start-email-generation}
 
-L’enregistrement ouvre la vue de sélection des prospects avec les filtres de ciblage de l’étape 2 appliqués.
+Après l’enregistrement, ajoutez les prospects à partir de la vue de sélection. Les filtres de ciblage que vous avez configurés sont appliqués.
 
 1. Passez en revue la liste.
 
@@ -179,6 +181,15 @@ Les e-mails peuvent également être générés dans la langue du prospect, avec
 ## Consulter et affiner les e-mails générés
 
 Une fois la génération terminée, la vue détaillée du workflow sortant vous invite à consulter les brouillons. [!DNL Marketo Qualifier] n’envoie pas d’e-mail tant que vous ne l’avez pas approuvé.
+
+Avant qu’un brouillon ne soit examiné, [!DNL Marketo Qualifier] le vérifie par rapport aux directives de qualité. En cas d’échec, le brouillon est réécrit à l’aide de commentaires spécifiques et vérifié à nouveau. Les mêmes directives guident le premier brouillon, de sorte que la plupart des e-mails y répondent lors de la première passe. Ces contrôles permettent de garantir que :
+
+* Le corps de l’e-mail contient uniquement le message pour le prospect, sans notes internes, raisonnement ni références sources.
+* Une demande de réunion s’affiche uniquement lorsque votre calendrier est connecté dans [Paramètres de profil](profile-settings.md), qu’un lien de réservation est disponible et que l’invite de point de contact demande une demande de réunion.
+* Les listes à puces sont correctement formatées.
+* L’e-mail évite les modèles courants qui sonnent à l’IA, notamment les tirets, les listes de trois utilisés pour le rythme, le phrasé « pas seulement X, mais Y » et les clichés surutilisés.
+
+Vous révisez, modifiez et approuvez toujours chaque e-mail avant son envoi. Le raisonnement, les modifications directes et l’**[!UICONTROL génération à l’aide de l’IA]** fonctionnent comme auparavant.
 
 1. Dans la vue détaillée du workflow sortant, sélectionnez **[!UICONTROL Vérifier les brouillons]** dans la bannière.
 1. L’étape **[!UICONTROL Vérifier les points de contact]** comporte deux onglets :
@@ -233,7 +244,7 @@ Chaque workflow sortant comporte un paramètre **[!UICONTROL Autorisations]**. L
 >
 >Le partage est permanent. Une fois qu’un workflow sortant est défini sur **[!UICONTROL Partagé avec tout le monde]**, il ne peut pas être redéfini sur **[!UICONTROL Privé]**.
 
-Sur un workflow sortant partagé, les coéquipiers peuvent inscrire leurs propres prospects. Chaque personne ne peut gérer ou suspendre que les prospects auxquels elle est inscrite, y compris lors de l’utilisation d’actions en masse. Le propriétaire du workflow sortant peut seul modifier les paramètres au niveau du plan, notamment la planification, le fuseau horaire et le rythme. Ces paramètres sont en lecture seule pour les coéquipiers.
+Sur un workflow sortant partagé, les coéquipiers peuvent inscrire leurs propres prospects. Chaque personne ne peut gérer ou suspendre que les prospects auxquels elle est inscrite, y compris lors de l’utilisation d’actions en masse. Le propriétaire du workflow sortant peut seul modifier les paramètres au niveau du plan, tels que la fenêtre d’envoi et le fuseau horaire. Ces paramètres sont en lecture seule pour les coéquipiers. Pour modifier les points de contact sur un workflow sortant en cours d’exécution, dupliquez-le et modifiez la copie.
 
 Lorsque vous inscrivez des prospects à un workflow sortant partagé, choisissez si l’e-mail est envoyé en tant que propriétaire du workflow ou représentant affecté de chaque prospect.
 
@@ -247,11 +258,25 @@ Utilisez ces filtres pour que les workflows sortants partagés et les résultats
 Lorsqu’un prospect répond avec un message d’absence du bureau, le workflow sortant le gère automatiquement.
 
 * **Reprise automatique** : activé par défaut. Si la réponse d’absence du bureau comprend une date de retour, le workflow sortant reprend le rythme à cette date. Si aucune date de retour n’est indiquée, le workflow sortant reprend après une mémoire tampon de reprise que votre équipe peut configurer.
-* **Options manuelles** : un rep peut toujours sélectionner **[!UICONTROL Reprendre maintenant]** ou planifier une date de reprise spécifique. Voir [&#x200B; Gestion des workflows sortants existants &#x200B;](#manage-existing-outbound-workflows).
+* **Options manuelles** : un rep peut toujours sélectionner **[!UICONTROL Reprendre maintenant]** ou planifier une date de reprise spécifique. Voir [ Gestion des workflows sortants existants ](#manage-existing-outbound-workflows).
+
+### Demandes d’opt-out dans les réponses
+
+Lorsqu’un prospect répond avec une demande claire de cesser de recevoir des e-mails, comme « veuillez arrêter de m’envoyer des e-mails », « désabonnez-vous », « supprimez-moi de cette liste » ou « retirez-moi de votre liste », [!DNL Marketo Qualifier] marque automatiquement le prospect comme étant désabonné. Il s’agit du même statut et du même badge **[!UICONTROL Opt-out]** que celui utilisé pour sélectionner le lien d’opt-out. Aucun autre point de contact n’est envoyé. Toute mise à jour du statut du CRM configuré fonctionne comme pour un lien d’opt-out.
+
+Seules les requêtes claires sont comptabilisées. Par exemple, la mention « Je ne suis pas la bonne personne » ou « Pas en ce moment » est traitée comme n’importe quelle autre réponse, et non comme un droit d’opposition. Aucune configuration n’est nécessaire ; les désinscriptions en réponse fonctionnent avec le lien d’exclusion configuré dans [Paramètres d’administration](admin-settings.md#configure-global-email-opt-out).
+
+## Dupliquer un workflow sortant
+
+Vous pouvez dupliquer un workflow sortant que vous avez créé ou qui est partagé avec vous. Dupliquez-le à partir de la liste des workflows sortants de l’onglet **[!UICONTROL Parcourir]** ou à partir de la vue détaillée du workflow.
+
+La copie comprend l’objectif, le ciblage, les points de contact et les paramètres d’origine, mais pas ses prospects. La copie commence en tant que **[!UICONTROL brouillon]** avec des autorisations **[!UICONTROL privées]** afin que vous puissiez la réviser et la modifier avant de l’ajouter aux prospects ou de la partager. Le workflow d’origine et ses prospects ne sont pas affectés.
+
+Pour modifier les points de contact d’un workflow sortant en cours d’exécution, dupliquez-le et modifiez la copie. Ajoutez des prospects à la copie ; les prospects déjà inscrits à l’original continuent à courir sans interruption. Chaque workflow possède ses propres résultats dans [Performances sortantes](performance.md).
 
 ## Gestion des workflows sortants existants
 
-Sur la page **[!UICONTROL Workflows sortants]**, l’onglet **[!UICONTROL Parcourir]** répertorie tous les workflows sortants disponibles. Chaque carte affiche l’objectif, les points de contact configurés et les mesures de performances. Utilisez cette vue pour surveiller les workflows sortants, réviser les brouillons ou ajouter des prospects.
+Sur la page **[!UICONTROL Workflows sortants]**, l’onglet **[!UICONTROL Parcourir]** répertorie tous les workflows sortants disponibles. Chaque carte affiche l’objectif, les points de contact configurés et les mesures de performances. Utilisez cette vue pour surveiller les workflows sortants, réviser les brouillons, ajouter des prospects ou dupliquer un workflow.
 
 ## Boîte d’envoi d’e-mail
 
@@ -262,7 +287,7 @@ La [boîte d’envoi d’e-mail](email-outbox.md) répertorie les e-mails automa
 Lorsque vous connectez votre calendrier, Marketo Qualifier génère un lien de réservation personnel que les prospects peuvent utiliser pour planifier des heures avec vous.
 
 * **Liens de réservation**—Configurez la connexion et la disponibilité de votre calendrier dans [Paramètres du profil](profile-settings.md). Ajoutez le lien de réservation à votre signature d’e-mail afin qu’il apparaisse dans les e-mails sortants.
-* **Placement de cadence**—Marketo Qualifier insère votre lien de réservation aux points pertinents d&#39;une cadence. Vous pouvez modifier son emplacement.
+* **Placement de cadence** : Marketo Qualifier insère votre lien de réservation aux points pertinents d’une cadence. Vous pouvez modifier son emplacement.
 * **Pause de la réservation** : lorsqu’un prospect réserve une réunion, **[!UICONTROL Pause de la réservation de la réunion]** arrête les autres suivis. Voir [Étape 4 : Configurer les paramètres de workflow sortant](#step-4-configure-outbound-workflow-settings).
 
 Suivez les résultats de la réservation sur la page [Performances sortantes](performance.md).
@@ -278,5 +303,5 @@ Suivez les résultats de la réservation sur la page [Performances sortantes](pe
 >[!MORELIKETHIS]
 >
 >* [Tâches](tasks.md)
->* [&#x200B; Centre de connaissances &#x200B;](admin-settings.md#knowledge-center)
+>* [ Centre de connaissances ](admin-settings.md#knowledge-center)
 >* [Performance sortante](performance.md)
