@@ -3,20 +3,26 @@ title: Paramètres d’administration
 description: Découvrez comment gérer les champs CRM, la synchronisation des activités, le processus d’opt-out des e-mails et d’autres paramètres d’administration des [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: Admin
-TQID: 'https://experienceleague.adobe.com/vbtO6I67ZEaZz3oio9InNErvq5D0wjbRxyDZpTq8Lzo'
-product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
-feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
-    internal-label: Integrations
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
-    internal-label: Administration
-
 internal-label: Administration
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+autotag-review: '2026-10-08T17:58:28.029Z'
+TQID: 'https://experienceleague.adobe.com/2eccZWj1XY7qP20n6GcnBe6PZwNkp0ALhZfOhljwZF8'
+product_v2:
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1292'
 ht-degree: 0%
 ---
 
@@ -55,7 +61,7 @@ Chaque prospect peut inclure un aperçu d’e-mail [!DNL Marketo], un lien vers 
 
 ## Étendue de l’accès CRM
 
-Le qualificateur Marketo lit les utilisateurs, les contacts, les mappages des propriétaires, les prospects, les comptes, les opportunités et les activités à partir du CRM. Il écrit uniquement les activités de sensibilisation consignées et le statut d’opt-out dans le CRM, et synchronise les activités de sensibilisation avec Marketo. Votre administrateur CRM prépare l’accès à l’API dans Salesforce ou Dynamics. Un administrateur Marketo Qualifier connecte ensuite le CRM, mappe les champs entrants et choisit de synchroniser ou non les activités.
+Marketo Qualifier lit les utilisateurs, les contacts, les mappages des propriétaires, les prospects, les comptes, les opportunités et les activités à partir du CRM. Il écrit uniquement les activités de sensibilisation consignées et le statut d’opt-out dans le CRM, et synchronise les activités de sensibilisation avec Marketo. Votre administrateur CRM prépare l’accès à l’API dans Salesforce ou Dynamics. Un administrateur Marketo Qualifier se connecte ensuite au CRM, mappe les champs entrants et choisit de synchroniser ou non les activités.
 
 >[!NOTE]
 >
@@ -63,7 +69,7 @@ Le qualificateur Marketo lit les utilisateurs, les contacts, les mappages des pr
 
 ## Mappage des champs CRM (mapping entrant)
 
-Une fois le CRM connecté, sélectionnez **[!UICONTROL Gérer]** pour la connexion et ouvrez **[!UICONTROL Mapping entrant]**. Le mappage entrant contrôle les champs CRM que le qualificateur Marketo extrait dans l’application.
+Une fois le CRM connecté, sélectionnez **[!UICONTROL Gérer]** pour la connexion et ouvrez **[!UICONTROL Mapping entrant]**. Le mappage entrant contrôle les champs CRM que Marketo Qualifier extrait dans l’application.
 
 1. Sélectionnez **[!UICONTROL Ajouter une section]**.
 1. Saisissez un nom et une description de section.
@@ -75,7 +81,7 @@ Une fois le CRM connecté, sélectionnez **[!UICONTROL Gérer]** pour la connexi
 1. Activez **[!UICONTROL Filtrable]** pour chaque champ de prospect, contact ou opportunité que vous souhaitez rendre disponible en tant que filtre sur la liste **[!UICONTROL Prospects]**.
 1. Prévisualisez la section et sélectionnez **[!UICONTROL Ajouter]**.
 
-Les champs mappés apparaissent dans les zones correspondantes du qualificateur Marketo :
+Les champs mappés apparaissent dans les zones correspondantes de Marketo Qualifier :
 
 * Les champs du prospect apparaissent dans l’onglet **[!UICONTROL Personne]**.
 * Les champs Compte s’affichent dans l’onglet **[!UICONTROL Compte]**.
@@ -85,13 +91,13 @@ Les champs mappés apparaissent dans les zones correspondantes du qualificateur 
 
 1. Dans **[!UICONTROL Connexions CRM]**, sélectionnez **[!UICONTROL Gérer]** pour le CRM connecté.
 1. Ouvrez **[!UICONTROL Mapping sortant]**.
-1. Activez **[!UICONTROL Synchronisation des activités]** pour synchroniser les activités de sensibilisation du qualificateur Marketo avec le CRM et Marketo.
+1. Activez **[!UICONTROL Synchronisation des activités]** pour synchroniser les activités de sensibilisation Marketo Qualifier avec le CRM et Marketo.
 
-Lorsque la synchronisation des activités est désactivée, le qualificateur de Marketo continue à utiliser les données CRM entrantes, mais ne synchronise pas les activités de sensibilisation vers votre CRM ou votre Marketo.
+Lorsque la synchronisation des activités est désactivée, Marketo Qualifier continue à utiliser les données CRM entrantes, mais ne synchronise pas les activités de sensibilisation avec votre CRM ou votre Marketo.
 
 ## Configuration des règles de synchronisation CRM
 
-Le qualificateur Marketo peut écrire automatiquement des mises à jour de statut de lead dans Salesforce et Microsoft Dynamics lorsqu’un prospect se déplace dans un workflow sortant, de sorte que les représentants ne mettent plus à jour le CRM manuellement.
+Marketo Qualifier peut automatiquement renvoyer les mises à jour de statut des prospects à Salesforce et Microsoft Dynamics lorsqu’un prospect se déplace dans un workflow sortant, de sorte que les représentants ne mettent plus à jour le CRM manuellement.
 
 ### À quoi servent les règles de synchronisation CRM
 
@@ -124,7 +130,7 @@ Le **[!UICONTROL Centre de connaissances]** donne à Account Qualification Agent
 ![&#x200B; Centre de connaissances &#x200B;](assets/knowledge-center.png){width="800" zoomable="yes"}
 
 1. Dans le volet de navigation de gauche, développez **[!UICONTROL Administration]**, sélectionnez **[!UICONTROL Paramètres d’administration]**, puis sélectionnez **[!UICONTROL Centre de connaissances]**.
-1. Définissez les **[!UICONTROL Nom de la société]** et **[!UICONTROL URL de la société]** que le qualificateur Marketo utilise pour rechercher votre société et rédiger des e-mails.
+1. Définissez les paramètres **[!UICONTROL Nom de la société]** et **[!UICONTROL URL de la société]** que Marketo Qualifier utilise pour effectuer des recherches dans votre société et rédiger des e-mails.
 1. Chargez des pièces de théâtre commerciales, des profils client idéaux, des guides de positionnement et d’autres documents promotionnels au format PDF, PPTX ou DOCX.
 1. Sélectionnez **[!UICONTROL Créer un playbook]**.
 
@@ -138,7 +144,7 @@ Chaque document chargé affiche également son statut de traitement, tel que **[
 
 Lorsque le manuel est prêt, les représentants peuvent l’utiliser à deux endroits :
 
-* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [&#x200B; Générer et réviser des points de contact](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [&#x200B; Configuration des points de contact &#x200B;](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat IA** : Reportez-vous au Centre de connaissances dans votre question. Par exemple, saisissez `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Voir [Conversation IA](ai-assistant.md).
 
 Dans les deux cas, le contenu généré reflète le message de votre playbook plutôt que la recherche générique.
@@ -152,7 +158,7 @@ Dans les deux cas, le contenu généré reflète le message de votre playbook pl
 
 Les paramètres sont enregistrés automatiquement.
 
-Lorsqu’un prospect sélectionne le lien, le qualificateur Marketo cesse d’envoyer des e-mails à ce prospect et synchronise le statut d’opt-out sur le CRM connecté.
+Lorsqu’un prospect sélectionne le lien, Marketo Qualifier cesse d’envoyer des e-mails à ce prospect et synchronise le statut de désinscription sur le CRM connecté. Marketo Qualifier reconnaît également les demandes de désinscription claires dans la réponse par e-mail d’un prospect, telles que « veuillez arrêter de m’envoyer un e-mail » ou « désabonner », et marque le prospect comme étant automatiquement désabonné. Le même statut et le même badge **[!UICONTROL Opt-out]** s’appliquent et aucun autre point de contact n’est envoyé. Aucune configuration supplémentaire n’est nécessaire. Les réponses qui ne demandent pas clairement à arrêter, comme « pas maintenant », ne sont pas traitées comme des opt-outs. Voir [Demandes d’opt-out dans les réponses](outbound-workflows.md#opt-out-requests-in-replies).
 
 ## Référence : exemples de paramètres d’API
 

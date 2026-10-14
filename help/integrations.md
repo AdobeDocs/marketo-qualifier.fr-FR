@@ -1,11 +1,11 @@
 ---
 title: Gestion des intégrations
-description: Découvrez comment connecter Outlook, gérer les connexions CRM, mapper les champs entrants, synchroniser les activités et configurer le processus d’opt-out global des e-mails dans le qualificateur Adobe Marketo.
+description: Découvrez comment connecter Outlook, gérer les connexions CRM, mapper les champs entrants, synchroniser les activités et configurer le processus de désinscription globale aux e-mails dans Adobe Marketo Qualifier.
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User, Admin
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -18,15 +18,15 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1456'
 ht-degree: 1%
 ---
 
 # Intégrations
 
-Connectez Outlook pour envoyer des e-mails, reconnaître les réponses des prospects et planifier des réunions. Pour mettre les prospects, contacts, comptes, opportunités, activités et propriétaires à la disposition de Account Qualification Agent (AQA) et des workflows sortants, vous pouvez également connecter Adobe Marketo Qualifier à Salesforce ou Microsoft Dynamics 365. Marketo Qualifier lit les données CRM, peut écrire les activités de sensibilisation et le statut de désinscription dans le CRM, et peut synchroniser les activités de sensibilisation avec Marketo. Il ne modifie pas les enregistrements CRM d’une autre manière.
+Connectez Outlook pour envoyer des e-mails, reconnaître les réponses des prospects et planifier des réunions. Pour mettre les prospects, contacts, comptes, opportunités, activités et propriétaires à la disposition de Account Qualification Agent (AQA) et des workflows sortants, vous pouvez également connecter Adobe Marketo Qualifier à Salesforce ou Microsoft Dynamics 365. Marketo Qualifier lit les données CRM, peut écrire les activités de sensibilisation et le statut de désinscription dans le CRM et peut synchroniser les activités de sensibilisation avec Marketo. Il ne modifie pas les enregistrements CRM d’une autre manière.
 
 Cet article explique comment connecter Outlook, gérer une connexion CRM, mapper des champs, synchroniser des activités et configurer le processus de désinscription aux e-mails. Pour connecter un CRM pour la première fois, voir [Prise en main](getting-started.md#connect-your-crm).
 
@@ -44,7 +44,7 @@ Chaque représentant connecte son propre compte Outlook :
 
 La connexion permet à Marketo Qualifier d’envoyer des messages depuis votre boîte aux lettres, de reconnaître le moment où un prospect répond et de planifier des réunions dans votre calendrier.
 
-Lorsque vous vous connectez, vous approuvez l’accès qui permet au qualificateur Marketo de :
+Lorsque vous vous connectez, vous approuvez l’accès qui permet à Marketo Qualifier de :
 
 * Reconnaître les réponses des prospects.
 * Créer et envoyer un e-mail en votre nom.
@@ -110,11 +110,11 @@ Une carte non configurée affiche **[!UICONTROL Connect]**. Une carte configuré
 
 1. Sélectionnez **[!UICONTROL Connexion]** (ou **[!UICONTROL Enregistrer]** lors de la modification).
 
-Si le qualificateur Marketo rejette les informations d’identification, il identifie la cause, telles que des informations d’identification non valides ou expirées, des autorisations manquantes ou un client Dynamics non reconnu. Corrigez la valeur et réessayez.
+Si Marketo Qualifier rejette les informations d’identification, il identifie la cause, telles que des informations d’identification non valides ou expirées, des autorisations manquantes ou un client Dynamics non reconnu. Corrigez la valeur et réessayez.
 
 >[!IMPORTANT]
 >
->N’envoyez pas de secrets clients par e-mail. Utilisez le canal sécurisé approuvé de votre organisation pour partager les informations d’identification avec la personne qui les saisit dans le qualificateur Marketo.
+>N’envoyez pas de secrets clients par e-mail. Utilisez le canal sécurisé approuvé de votre organisation pour partager des informations d’identification avec toute personne qui les saisit dans Marketo Qualifier.
 
 ### Déconnecter une connexion
 
@@ -192,7 +192,7 @@ Le paramètre d’opt-out ajoute un pied de page de désabonnement à chaque e-m
 
 Le paramètre et le modèle sont enregistrés automatiquement.
 
-Lorsqu’un prospect sélectionne le lien, Marketo Qualifier cesse d’envoyer des e-mails à ce prospect et synchronise le statut d’opt-out avec le CRM connecté.
+Lorsqu’un prospect sélectionne le lien, Marketo Qualifier cesse d’envoyer des e-mails à ce prospect et synchronise le statut d’opt-out avec le CRM connecté. Marketo Qualifier reconnaît également les demandes de désinscription claires dans la réponse par e-mail d’un prospect, telles que « veuillez arrêter de m’envoyer un e-mail » ou « désabonner », et marque le prospect comme étant automatiquement désabonné. Le même statut et le même badge **[!UICONTROL Opt-out]** s’appliquent et aucun autre point de contact n’est envoyé. Aucune configuration supplémentaire n’est nécessaire. Les réponses qui ne demandent pas clairement à arrêter, comme « pas maintenant », ne sont pas traitées comme des opt-outs. Voir [Demandes d’opt-out dans les réponses](outbound-workflows.md#opt-out-requests-in-replies).
 
 ## Étendue de l’accès CRM
 

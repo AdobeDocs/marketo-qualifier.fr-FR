@@ -5,8 +5,8 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 TQID: 'https://experienceleague.adobe.com/zf2H5rq1JlIT26LqLPMrm2Mq3tSIrLOiTEw6BXb1w2U'
 product_v2:
-  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
-    internal-label: CX Enterprise
+  - id: d98caee2-fd67-486e-9513-36435358ebff
+    internal-label: Sales Qualifier
 feature_v2:
   - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
     internal-label: Integrations
@@ -15,9 +15,9 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2124387555f5fb08ea19eaf121fc87aa66d66de2
+source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '852'
 ht-degree: 1%
 ---
 
@@ -48,7 +48,7 @@ La liste des prospects regroupe des personnes provenant de plusieurs sources :
 
 * **Prospects CRM** : [!DNL Adobe Marketo Qualifier] importe automatiquement les leads et les contacts affectés à l&#39;utilisateur connecté. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](integrations.md).
 * **Prospects importés**—Prospects importés à partir d&#39;un fichier CSV.
-* **Prospects ajoutés manuellement**—Prospects ajoutés individuellement dans le qualificateur Marketo.
+* **Prospects ajoutés manuellement**—Prospects ajoutés individuellement dans Marketo Qualifier.
 
 Pour ajouter des prospects qui ne proviennent pas de votre CRM :
 
@@ -106,8 +106,12 @@ Pour ouvrir le profil d’un prospect, sélectionnez-le. Examinez les signaux qu
 
 Outre le résumé de la personne IA permanente, vous pouvez générer une préparation de réunion adaptée à un appel à venir spécifique à partir de l’onglet **[!UICONTROL Recherche de réunion]** en regard de **[!UICONTROL Recherche de compte]**.
 
+La préparation de réunion associe les recherches sur le Web sur le prospect et son entreprise à des données issues d’études de cas sur des clients pairs qui utilisent le produit que vous vendez. Les points de discussion des études de cas peuvent inclure des résultats clients mesurables. Les sources sont regroupées en un seul mémoire, avec des points de discussion classés par pertinence. Chaque point de discussion permet de déterminer s’il provient d’études de cas, de recherches sur le Web ou des deux. Si aucune preuve d&#39;étude de cas pertinente n&#39;est disponible, la préparation de la réunion utilise la recherche sur le Web.
+
 * **Basé sur un objectif** : si le prospect est inscrit à un workflow sortant en cours d’exécution, sélectionnez-le. La préparation correspond à l’objectif de ce workflow sortant, tel que réserver une réunion ou réengager le prospect.
 * **Invite personnalisée**—Saisissez ce pour quoi vous souhaitez vous préparer, par exemple `Focus on renewal risk` ou `Prepare for a technical deep dive with their IT lead`. La préparation correspond à votre invite. L’option d’invite personnalisée est disponible lorsque le prospect ne se trouve pas dans un workflow sortant en cours d’exécution.
+
+Le brief continue de suivre l’objectif du workflow sortant ou l’invite personnalisée que vous choisissez. La manière dont vous générez la préparation des réunions ne change pas.
 
 >[!MORELIKETHIS]
 >
