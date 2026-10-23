@@ -17,10 +17,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 18%
+source-wordcount: '517'
+ht-degree: 17%
 ---
 
 # [!DNL Adobe Marketo Qualifier]
@@ -32,6 +32,7 @@ L’application fait partie de la famille de produits [!DNL Marketo], avec [!DNL
 ## Ce que vous pouvez faire en [!DNL Marketo Qualifier]
 
 * **Hiérarchisez les prospects et les comptes** avec des résumés d’activités générés par l’IA et une hiérarchisation basée sur les signaux.
+* **Créez des listes cibles avec [Audience intelligente (Beta)](smart-audience.md)** en décrivant les comptes en langage clair, en ajoutant des données CRM et des signaux de croissance, et en examinant les prospects notés pour un workflow sortant.
 * **Créer des workflows sortants pilotés par les objectifs** dans lesquels l’IA propose une cadence et rédige des e-mails personnalisés pour chaque prospect.
 * **Traiter la sensibilisation dans une seule file d&#39;attente** pour les appels téléphoniques, LinkedInMails et les révisions d&#39;e-mails.
 * **Réservez automatiquement des réunions** en connectant votre calendrier et en insérant un lien de réservation personnel dans votre rythme.
@@ -39,7 +40,7 @@ L’application fait partie de la famille de produits [!DNL Marketo], avec [!DNL
 * **Posez vos questions en langage naturel** avec le Module de conversation sur l’IA, qui utilise vos données de gestion de la relation client, d’engagement et de centre de connaissances.
 * **Suivre les performances de la sensibilisation** avec des rapports sur les e-mails et les réservations de réunions.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476563?captions=fre_fr)
+>[!VIDEO](https://video.tv.adobe.com/v/3476550)
 
 ## Utiliser la page d’accueil
 
@@ -51,7 +52,7 @@ La page d’accueil affiche également les tâches à venir et les workflows sor
 
 ::::landing-cards-container
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Commencer
 
@@ -61,7 +62,7 @@ Effectuez la configuration d’administration unique pour les groupes d’utilis
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Prospects
 
@@ -71,7 +72,7 @@ Créez, filtrez et examinez votre liste de prospects.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Comptes
 
@@ -81,7 +82,17 @@ Privilégiez la sensibilisation avec le pipeline au niveau du compte et les donn
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Audience intelligente (Beta)
+
+Créez et hiérarchisez des listes de comptes et de prospects, puis ajoutez les prospects sélectionnés à un workflow sortant.
+
+[Audience intelligente (Beta)](smart-audience.md)
+:::
+
+:::card
+![icône](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
 Workflows sortants
 
@@ -91,7 +102,7 @@ Créez des cadences axées sur les objectifs avec des e-mails personnalisés gé
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Tâches
 
@@ -101,7 +112,7 @@ Traitez les tâches d’appel téléphonique, LinkedInMail et de révision d’e
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Performance
 
@@ -111,7 +122,7 @@ Vérifiez les performances des e-mails et des réservations de réunions.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Centre de connaissances
 
@@ -121,7 +132,7 @@ Créez un playbook qui étaye la sensibilisation et l’assistance de l’IA dan
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Intégrations
 
@@ -131,7 +142,7 @@ Connectez Salesforce ou Microsoft Dynamics 365 et mappez vos champs.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
 Paramètres de profil
 
@@ -141,7 +152,7 @@ Configurez la disponibilité de vos e-mails, signatures et calendriers.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 Conversation sur l’IA
 

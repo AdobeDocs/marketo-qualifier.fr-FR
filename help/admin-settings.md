@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Administration
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1356'
 ht-degree: 0%
 ---
 
@@ -78,14 +78,16 @@ Une fois le CRM connecté, sélectionnez **[!UICONTROL Gérer]** pour la connexi
 
    Chaque ligne de champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
 
-1. Activez **[!UICONTROL Filtrable]** pour chaque champ de prospect, contact ou opportunité que vous souhaitez rendre disponible en tant que filtre sur la liste **[!UICONTROL Prospects]**.
+1. Activez **[!UICONTROL Filtrable]** pour chaque champ de prospect, contact, compte ou opportunité que vous souhaitez rendre disponible en tant que filtre sur la liste **[!UICONTROL Prospects]** et dans le [ciblage des workflows sortants](outbound-workflows.md#step-2-configure-targeting-filters).
 1. Prévisualisez la section et sélectionnez **[!UICONTROL Ajouter]**.
 
 Les champs mappés apparaissent dans les zones correspondantes de Marketo Qualifier :
 
 * Les champs du prospect apparaissent dans l’onglet **[!UICONTROL Personne]**.
-* Les champs Compte s’affichent dans l’onglet **[!UICONTROL Compte]**.
+* Les champs Compte s’affichent dans l’onglet **[!UICONTROL Compte]**. Dans une section dotée du type d&#39;entité **[!UICONTROL Comptes]**, les champs peuvent être filtrés afin que les représentants puissent filtrer les contacts en fonction des attributs de leur compte associé, tels que le secteur, la région ou le type de compte.
 * Les champs d’opportunité apparaissent dans la section **[!UICONTROL Opportunité de compte]**. Les champs d’opportunité filtrables apparaissent également comme leurs propres colonnes dans **[!UICONTROL Mes contacts d’opportunité]**, avec des libellés tels que **[!UICONTROL Étape (opportunité)]** pour les distinguer des champs de contact.
+
+Le filtrage des champs de compte est disponible pour Salesforce et Microsoft Dynamics 365. Les représentants peuvent combiner des champs filtrables de compte, de contact et d&#39;opportunité pour rechercher des contacts et définir des critères de ciblage de workflow sortant.
 
 ## Configuration de la synchronisation des activités (mapping sortant)
 
@@ -127,7 +129,7 @@ Une fois les règles de synchronisation CRM configurées, les équipes commercia
 
 Le **[!UICONTROL Centre de connaissances]** donne à Account Qualification Agent (AQA) accès à vos documents de vente. Marketo Qualifier utilise ces ressources pour générer des recherches, des informations sur les qualifications et des informations qui reflètent les ventes de votre entreprise. Seuls les administrateurs peuvent créer et gérer le playbook.
 
-![&#x200B; Centre de connaissances &#x200B;](assets/knowledge-center.png){width="800" zoomable="yes"}
+![ Centre de connaissances ](assets/knowledge-center.png){width="800" zoomable="yes"}
 
 1. Dans le volet de navigation de gauche, développez **[!UICONTROL Administration]**, sélectionnez **[!UICONTROL Paramètres d’administration]**, puis sélectionnez **[!UICONTROL Centre de connaissances]**.
 1. Définissez les paramètres **[!UICONTROL Nom de la société]** et **[!UICONTROL URL de la société]** que Marketo Qualifier utilise pour effectuer des recherches dans votre société et rédiger des e-mails.
@@ -144,7 +146,7 @@ Chaque document chargé affiche également son statut de traitement, tel que **[
 
 Lorsque le manuel est prêt, les représentants peuvent l’utiliser à deux endroits :
 
-* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [&#x200B; Configuration des points de contact &#x200B;](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [ Configuration des points de contact ](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat IA** : Reportez-vous au Centre de connaissances dans votre question. Par exemple, saisissez `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Voir [Conversation IA](ai-assistant.md).
 
 Dans les deux cas, le contenu généré reflète le message de votre playbook plutôt que la recherche générique.
@@ -187,5 +189,5 @@ ORDER BY LastModifiedDate DESC
 
 >[!MORELIKETHIS]
 >
->* [Commencer](getting-started.md)
+>* [Prise en main](getting-started.md)
 >* [Prospects](prospects.md)
