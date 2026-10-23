@@ -29,7 +29,7 @@ Pour rechercher et classer par priorité plusieurs comptes à la fois, utilisez 
 
 Ouvrez un compte à partir du profil d’un prospect qui lui est associé.
 
-1. Sélectionnez **[!UICONTROL Prospects]** dans le volet de navigation de gauche, puis ouvrez un prospect. Voir [ Prospects ](prospects.md).
+1. Sélectionnez **[!UICONTROL Prospects]** dans le volet de navigation de gauche, puis ouvrez un prospect. Voir [&#x200B; Prospects &#x200B;](prospects.md).
 1. Sur la page des détails du prospect, sélectionnez l’onglet **[!UICONTROL Compte]**.
 
 ![Page de détails du prospect avec onglets Personne et Compte](./assets/account-home.png){width="800" zoomable="yes"}
@@ -70,7 +70,7 @@ Utilisez les boutons situés sous la vue d’ensemble pour basculer entre les vu
 | **[!UICONTROL Membres de l’équipe de compte]** | Personnes affectées au compte, avec leur adresse e-mail, fonction, territoire et groupe de produits. |
 | **[!UICONTROL champs CRM]** | Champs de compte importés de votre CRM, tels que configurés dans le mapping entrant. |
 
-Les champs qu’un administrateur peut filtrer peuvent également être utilisés pour filtrer les contacts en fonction de leur compte associé et définir les critères de ciblage des workflows sortants. Pour plus d&#39;informations, consultez la section [ Intégrations ](integrations.md#map-crm-fields-inbound-mapping).
+Les champs qu’un administrateur peut filtrer peuvent également être utilisés pour filtrer les contacts en fonction de leur compte associé et définir les critères de ciblage des workflows sortants. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](integrations.md#map-crm-fields-inbound-mapping).
 
 Dans la vue **[!UICONTROL Membres principaux]**, effectuez l’une des actions suivantes pour un contact :
 

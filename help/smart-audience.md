@@ -39,7 +39,7 @@ Votre demande peut inclure les critères suivants :
 | Données firmographiques | Secteur d’activité, nombre d’employés, chiffre d’affaires annuel, type de compte et évaluation |
 | Emplacement | Région, pays, état ou ville |
 | Propriété | Vos comptes ou comptes affectés à un propriétaire nommé |
-| Pipeline | Comptes avec ou sans opportunité ouverte, soumis aux limites de [](#current-scope-and-limits) |
+| Pipeline | Comptes avec ou sans opportunité ouverte, soumis aux limites de [&#128279;](#current-scope-and-limits) |
 | Détails du compte | Nom, site web ou domaine et numéro de compte |
 
 Voici d’autres exemples de requêtes :
