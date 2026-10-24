@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1456'
+source-wordcount: '1510'
 ht-degree: 1%
 ---
 
@@ -147,9 +147,11 @@ Le mappage entrant contrôle les champs CRM que Marketo Qualifier importe et où
 
 1. Saisissez un **[!UICONTROL Nom de section]** et un **[!UICONTROL Description]** facultatif. Sélectionnez ensuite **[!UICONTROL Suivant]**.
 1. À l’étape **[!UICONTROL Ajouter un champ]**, pour importer des champs CRM, recherchez et sélectionnez-les. Ensuite, pour continuer, sélectionnez **[!UICONTROL Suivant]**. Chaque champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
-1. Pour les sections **[!UICONTROL Prospects]**, **[!UICONTROL Contacts]** et **[!UICONTROL Opportunités]**, activez **[!UICONTROL Filtrable]** pour chaque champ dont les représentants ont besoin dans la liste [Prospects](prospects.md).
+1. Pour les sections **[!UICONTROL Prospects]**, **[!UICONTROL Contacts]**, **[!UICONTROL Comptes]** et **[!UICONTROL Opportunités]**, activez **[!UICONTROL Filtrable]** pour chaque champ dont les représentants ont besoin sur la liste [Prospects](prospects.md#filter-and-find-prospects) ou dans le ciblage [&#x200B; &#x200B;](outbound-workflows.md#step-2-configure-targeting-filters) des workflows sortants.
 
    Un champ ne peut pas être filtré si son type de données ne prend pas en charge le filtrage ou s’il est déjà utilisé dans une autre section.
+
+   Les champs de compte filtrables permettent aux représentants de filtrer les contacts en fonction des attributs de leur compte associé, tels que le secteur, la région ou le type de compte. Ils peuvent combiner des filtres de compte, de contact et d’opportunité pour définir les contacts éligibles à un workflow sortant. Le filtrage des champs de compte est disponible pour Salesforce et Microsoft Dynamics 365.
 
    Dans **[!UICONTROL Mes contacts d’opportunité]**, les champs d’opportunité filtrables s’affichent sous la forme de colonnes distinctes avec des libellés tels que **[!UICONTROL Étape (opportunité)]**. Le suffixe distingue les attributs d’opportunité des champs du contact associé.
 
@@ -205,5 +207,5 @@ Votre administrateur CRM prépare l’accès à l’API dans Salesforce ou Dynam
 
 >[!MORELIKETHIS]
 >
->* [Commencer](getting-started.md)
+>* [Prise en main](getting-started.md)
 >* [Comptes](accounts.md)

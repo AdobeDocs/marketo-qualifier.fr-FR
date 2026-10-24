@@ -17,10 +17,10 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 18%
+source-wordcount: '517'
+ht-degree: 17%
 ---
 
 # [!DNL Adobe Marketo Qualifier]
@@ -32,6 +32,7 @@ L’application fait partie de la famille de produits [!DNL Marketo], avec [!DNL
 ## Ce que vous pouvez faire en [!DNL Marketo Qualifier]
 
 * **Hiérarchisez les prospects et les comptes** avec des résumés d’activités générés par l’IA et une hiérarchisation basée sur les signaux.
+* **Créez des listes cibles avec [Audience intelligente (Beta)](smart-audience.md)** en décrivant les comptes en langage clair, en ajoutant des données CRM et des signaux de croissance, et en examinant les prospects notés pour un workflow sortant.
 * **Créer des workflows sortants pilotés par les objectifs** dans lesquels l’IA propose une cadence et rédige des e-mails personnalisés pour chaque prospect.
 * **Traiter la sensibilisation dans une seule file d&#39;attente** pour les appels téléphoniques, LinkedInMails et les révisions d&#39;e-mails.
 * **Réservez automatiquement des réunions** en connectant votre calendrier et en insérant un lien de réservation personnel dans votre rythme.
@@ -78,6 +79,16 @@ Comptes
 Privilégiez la sensibilisation avec le pipeline au niveau du compte et les données d’engagement.
 
 [Comptes](accounts.md)
+:::
+
+:::card
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
+
+Audience intelligente (Beta)
+
+Créez et hiérarchisez des listes de comptes et de prospects, puis ajoutez les prospects sélectionnés à un workflow sortant.
+
+[Audience intelligente (Beta)](smart-audience.md)
 :::
 
 :::card

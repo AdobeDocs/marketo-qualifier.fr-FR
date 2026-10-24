@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Administration
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '1292'
+source-wordcount: '1356'
 ht-degree: 0%
 ---
 
@@ -78,14 +78,16 @@ Une fois le CRM connecté, sélectionnez **[!UICONTROL Gérer]** pour la connexi
 
    Chaque ligne de champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
 
-1. Activez **[!UICONTROL Filtrable]** pour chaque champ de prospect, contact ou opportunité que vous souhaitez rendre disponible en tant que filtre sur la liste **[!UICONTROL Prospects]**.
+1. Activez **[!UICONTROL Filtrable]** pour chaque champ de prospect, contact, compte ou opportunité que vous souhaitez rendre disponible en tant que filtre sur la liste **[!UICONTROL Prospects]** et dans le [ciblage des workflows sortants](outbound-workflows.md#step-2-configure-targeting-filters).
 1. Prévisualisez la section et sélectionnez **[!UICONTROL Ajouter]**.
 
 Les champs mappés apparaissent dans les zones correspondantes de Marketo Qualifier :
 
 * Les champs du prospect apparaissent dans l’onglet **[!UICONTROL Personne]**.
-* Les champs Compte s’affichent dans l’onglet **[!UICONTROL Compte]**.
+* Les champs Compte s’affichent dans l’onglet **[!UICONTROL Compte]**. Dans une section dotée du type d&#39;entité **[!UICONTROL Comptes]**, les champs peuvent être filtrés afin que les représentants puissent filtrer les contacts en fonction des attributs de leur compte associé, tels que le secteur, la région ou le type de compte.
 * Les champs d’opportunité apparaissent dans la section **[!UICONTROL Opportunité de compte]**. Les champs d’opportunité filtrables apparaissent également comme leurs propres colonnes dans **[!UICONTROL Mes contacts d’opportunité]**, avec des libellés tels que **[!UICONTROL Étape (opportunité)]** pour les distinguer des champs de contact.
+
+Le filtrage des champs de compte est disponible pour Salesforce et Microsoft Dynamics 365. Les représentants peuvent combiner des champs filtrables de compte, de contact et d&#39;opportunité pour rechercher des contacts et définir des critères de ciblage de workflow sortant.
 
 ## Configuration de la synchronisation des activités (mapping sortant)
 
@@ -187,5 +189,5 @@ ORDER BY LastModifiedDate DESC
 
 >[!MORELIKETHIS]
 >
->* [Commencer](getting-started.md)
+>* [Prise en main](getting-started.md)
 >* [Prospects](prospects.md)

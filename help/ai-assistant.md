@@ -16,9 +16,9 @@ level_v2:
 topic_v2:
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
     internal-label: Artificial intelligence
-source-git-commit: 042ebc0019d33019940ff8ad98c0635cb97235f0
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '754'
 ht-degree: 1%
 ---
 
@@ -58,7 +58,7 @@ Utilisez le Module de conversation sur l’IA pour ces types de tâches :
 
 ## Discutez avec Ask AI sur vos données connectées
 
-Le Chat IA peut répondre à des questions sur vos données [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] et d’intelligence d’entreprise. Posez une question en langage clair pour rechercher des informations ou récupérer du contexte. Le Chat IA lit et génère des rapports sur vos données ; il ne crée, ne modifie et ne lance rien.
+Le Chat IA peut répondre à des questions sur vos données [!DNL Marketo Qualifier], CRM, [!DNL Marketo], [!DNL Marketo Optimizer] et d’intelligence d’entreprise. Posez une question en langage clair pour rechercher des informations ou récupérer du contexte. Ces recherches de données connectées lisent et génèrent des rapports sur vos données ; elles ne créent, ne modifient ni ne lancent de programmes ou de campagnes.
 
 Voici quelques exemples d’invites. Plus vous êtes précis dans votre invite, plus les résultats sont ciblés.
 
@@ -106,7 +106,8 @@ Renseignements sur l’entreprise :
 
 ### Portée et limites actuelles
 
-* Le chat IA lit et génère des rapports sur vos données. Il ne crée, ne modifie et ne lance rien. Par exemple, il ne crée pas de programme, ne lance pas de campagne et ne modifie pas de liste.
+* Les recherches de données connectées lisent et génèrent des rapports sur vos données. Ils ne créent pas de programme, ne lancent pas de campagne et ne modifient pas d’enregistrement CRM.
+* Dans [Audience intelligente (Beta)](smart-audience.md) la conversation prend en charge les actions sur la liste des audiences, notamment l’enregistrement d’une liste, l’ajout de colonnes d’informations, le filtrage et la hiérarchisation des comptes et des prospects et l’ajout de prospects sélectionnés à un workflow sortant existant. Cela n’écrit pas dans le CRM ou ne remplace pas la révision et l’approbation des e-mails.
 * AI Chat recherche des informations ; ce n&#39;est pas un outil de reporting. Il ne crée pas d’analyses ou de tendances de style [!DNL Marketo] au fil du temps, telles que l’intégrité des e-mails pour le trimestre ou une liste de prospects créés au cours des 10 derniers jours. Utilisez les rapports natifs de [!DNL Marketo] pour ces tâches.
 
 ## Réponses au sol dans votre playbook

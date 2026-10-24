@@ -13,15 +13,17 @@ topic_v2:
     internal-label: Customer experience
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: 30abc8c57bb9b7a57f68c8e7daecc1bf3ac36567
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '703'
 ht-degree: 0%
 ---
 
 # Comptes
 
 La vue de compte combine les recherches générées par l’IA, les actualités récentes, les opportunités ouvertes, la valeur du pipeline et les contacts engagés. Utilisez ces informations pour comprendre et classer par priorité un compte avant de vous adresser à .
+
+Pour rechercher et classer par priorité plusieurs comptes à la fois, utilisez [Audience dynamique (Beta)](smart-audience.md). Créez une liste de comptes, affinez-la avec les données CRM et les signaux de croissance, et recherchez des prospects à ajouter à un workflow sortant.
 
 ## Ouvrir un compte
 
@@ -66,7 +68,9 @@ Utilisez les boutons situés sous la vue d’ensemble pour basculer entre les vu
 | **[!UICONTROL Membres principaux]** | Les contacts les plus engagés du compte, classés par engagement. Chaque contact affiche son intitulé de poste, son adresse e-mail, son score d’engagement et son indicateur d’urgence. |
 | **[!UICONTROL Données d’intention]** | Signaux d’intention d’achat pour le compte, tels que les produits et les sujets sur lesquels le compte fait des recherches. |
 | **[!UICONTROL Membres de l’équipe de compte]** | Personnes affectées au compte, avec leur adresse e-mail, fonction, territoire et groupe de produits. |
-| **[!UICONTROL champs CRM]** | Champs de compte importés de votre CRM, tels que configurés dans le mapping entrant. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](integrations.md#map-crm-fields-inbound-mapping). |
+| **[!UICONTROL champs CRM]** | Champs de compte importés de votre CRM, tels que configurés dans le mapping entrant. |
+
+Les champs qu’un administrateur peut filtrer peuvent également être utilisés pour filtrer les contacts en fonction de leur compte associé et définir les critères de ciblage des workflows sortants. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](integrations.md#map-crm-fields-inbound-mapping).
 
 Dans la vue **[!UICONTROL Membres principaux]**, effectuez l’une des actions suivantes pour un contact :
 

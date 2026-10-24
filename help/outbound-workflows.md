@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3b50b4d3000696cb25ef747fefd579cfd3b3ba0f
+source-git-commit: bf94a2d28913093923f446025405339e4e64919c
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2776'
 ht-degree: 0%
 ---
 
@@ -93,6 +93,8 @@ Décrivez votre prospect idéal en langage naturel. Par exemple, saisissez `Hot 
 
 Le ciblage peut utiliser le type d’activité, le score, l’évaluation et d’autres attributs disponibles. Combinez des critères avec [!DNL AND] ou [!DNL OR] et utilisez des opérateurs tels que égal à, contient, supérieur à, inférieur à et entre.
 
+Pour Salesforce et Microsoft Dynamics 365, le ciblage peut également combiner les champs de compte, de contact et d’opportunité qu’un administrateur rend filtrables dans le [mappage entrant](integrations.md#map-crm-fields-inbound-mapping). Par exemple, combinez le rôle d’un contact avec le secteur de son compte associé et l’étape d’une opportunité de cibler les bons contacts.
+
 ### Inscrire automatiquement les prospects aux activités marketing
 
 Un workflow sortant peut évaluer l’activité des points forts marketing en direct par rapport à ses critères de ciblage. Lorsque l’activité correspond, [!DNL Marketo Qualifier] résout le propriétaire du CRM du prospect par e-mail et l’inscrit uniquement dans un workflow éligible qui appartient à ce représentant.
@@ -161,6 +163,8 @@ Un administrateur configure globalement le pied de page d’opt-out, qui s’app
 ### Ajouter des prospects et commencer la génération d’e-mails {#step-5-add-prospects-and-start-email-generation}
 
 Après l’enregistrement, ajoutez les prospects à partir de la vue de sélection. Les filtres de ciblage que vous avez configurés sont appliqués.
+
+Vous pouvez également ajouter des prospects à un workflow sortant existant à partir d’une liste [Audience intelligente (Beta)](smart-audience.md#add-leads-to-an-outbound-workflow). Passez en revue les prospects et le workflow sélectionnés avant de confirmer. L’ajout de prospects ne remplace pas les étapes de révision et d’approbation des e-mails décrites ci-dessous.
 
 1. Passez en revue la liste.
 
