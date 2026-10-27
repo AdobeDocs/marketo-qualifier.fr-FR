@@ -56,7 +56,7 @@ La page d’accueil affiche également les tâches à venir et les workflows sor
 
 ::::landing-cards-container
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
 
 Commencer
 
@@ -66,7 +66,7 @@ Effectuez la configuration d’administration unique pour les groupes d’utilis
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Prospects
 
@@ -76,7 +76,7 @@ Créez, filtrez et examinez votre liste de prospects.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Comptes
 
@@ -86,7 +86,7 @@ Privilégiez la sensibilisation avec le pipeline au niveau du compte et les donn
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Audience intelligente (Beta)
 
@@ -96,7 +96,7 @@ Créez et hiérarchisez des listes de comptes et de prospects, puis ajoutez les 
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/code-branch.svg?lang=fr)
 
 Workflows sortants
 
@@ -106,7 +106,7 @@ Créez des cadences axées sur les objectifs avec des e-mails personnalisés gé
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Tâches
 
@@ -116,7 +116,7 @@ Traitez les tâches d’appel téléphonique, LinkedInMail et de révision d’e
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Performance
 
@@ -126,7 +126,7 @@ Vérifiez les performances des e-mails et des réservations de réunions.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Centre de connaissances
 
@@ -136,7 +136,7 @@ Créez un playbook qui étaye la sensibilisation et l’assistance de l’IA dan
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
 
 Intégrations
 
@@ -146,7 +146,7 @@ Connectez Salesforce ou Microsoft Dynamics 365 et mappez vos champs.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/list-check.svg?lang=fr)
 
 Paramètres de profil
 
@@ -156,7 +156,7 @@ Configurez la disponibilité de vos e-mails, signatures et calendriers.
 :::
 
 :::card
-![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+![icône](https://cdn.experienceleague.adobe.com/icons/circle-play.svg?lang=fr)
 
 Conversation sur l’IA
 
