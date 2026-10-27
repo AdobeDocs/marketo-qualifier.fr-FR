@@ -7,13 +7,29 @@ autotag-review: '2026-10-08T17:56:44.977Z'
 TQID: 'https://experienceleague.adobe.com/MQxeaEGw7q8rv57xKg1f-3LahWx1laiawyvaY3n6Ri8'
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
-    internal-label: Sales Qualifier
+    internal-label: Marketo Qualifier
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
+feature_v2:
+  - id: ace0d1fc-8e69-4e6a-a442-37fc40985eea
+    internal-label: Account Qualification Agent
+  - id: 1e0ea71a-a210-5748-9b0f-c02c2ef6a746
+    internal-label: Workflows
+  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+    internal-label: Integrations
+subfeature_v2:
+  - id: 0513c3f7-eb4d-5712-8de6-0397686096c8
+    internal-label: Accounts
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-    internal-label: Customer experience
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-    internal-label: Insights
-source-git-commit: 30abc8c57bb9b7a57f68c8e7daecc1bf3ac36567
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -29,7 +45,7 @@ Pour rechercher et classer par priorité plusieurs comptes à la fois, utilisez 
 
 Ouvrez un compte à partir du profil d’un prospect qui lui est associé.
 
-1. Sélectionnez **[!UICONTROL Prospects]** dans le volet de navigation de gauche, puis ouvrez un prospect. Voir [&#x200B; Prospects &#x200B;](prospects.md).
+1. Sélectionnez **[!UICONTROL Prospects]** dans le volet de navigation de gauche, puis ouvrez un prospect. Voir [ Prospects ](prospects.md).
 1. Sur la page des détails du prospect, sélectionnez l’onglet **[!UICONTROL Compte]**.
 
 ![Page de détails du prospect avec onglets Personne et Compte](./assets/account-home.png){width="800" zoomable="yes"}
@@ -70,7 +86,7 @@ Utilisez les boutons situés sous la vue d’ensemble pour basculer entre les vu
 | **[!UICONTROL Membres de l’équipe de compte]** | Personnes affectées au compte, avec leur adresse e-mail, fonction, territoire et groupe de produits. |
 | **[!UICONTROL champs CRM]** | Champs de compte importés de votre CRM, tels que configurés dans le mapping entrant. |
 
-Les champs qu’un administrateur peut filtrer peuvent également être utilisés pour filtrer les contacts en fonction de leur compte associé et définir les critères de ciblage des workflows sortants. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](integrations.md#map-crm-fields-inbound-mapping).
+Les champs qu’un administrateur peut filtrer peuvent également être utilisés pour filtrer les contacts en fonction de leur compte associé et définir les critères de ciblage des workflows sortants. Pour plus d&#39;informations, consultez la section [ Intégrations ](integrations.md#map-crm-fields-inbound-mapping).
 
 Dans la vue **[!UICONTROL Membres principaux]**, effectuez l’une des actions suivantes pour un contact :
 

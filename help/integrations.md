@@ -5,20 +5,27 @@ feature: Agentic AI, Sales Insights, Account Journeys
 role: User, Admin
 product_v2:
   - id: d98caee2-fd67-486e-9513-36435358ebff
-    internal-label: Sales Qualifier
+    internal-label: Marketo Qualifier
 feature_v2:
-  - id: fc7979f3-56c3-43ca-9784-f1ea3dc69c4b
+  - id: da701e37-3227-4187-b68a-914277252a79
     internal-label: Integrations
-  - id: fdbb8fc9-ffa3-4b86-88fe-aa4c5a3e1bc6
+  - id: f8f8b877-7295-5853-989f-e21f73bc94c4
     internal-label: Administration
+subfeature_v2:
+  - id: d2fe5f36-5653-5902-937c-9d3026104284
+    internal-label: CRM integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-    internal-label: Customer experience
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-    internal-label: Security
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-    internal-label: Insights
-source-git-commit: bf94a2d28913093923f446025405339e4e64919c
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
+source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 1%
@@ -75,7 +82,7 @@ Pour le centre de connaissances, consultez le guide [Créer un centre de connais
 
 ## Gestion des connexions CRM
 
-Sélectionnez **[!UICONTROL Connexions CRM]**. La page contient des cartes pour **&#x200B;**&#x200B;et **[!UICONTROL Microsoft]** (Microsoft Dynamics 365). Chaque carte présente l’un des statuts suivants :
+Sélectionnez **[!UICONTROL Connexions CRM]**. La page contient des cartes pour **** et **[!UICONTROL Microsoft]** (Microsoft Dynamics 365). Chaque carte présente l’un des statuts suivants :
 
 | Statut | Signification |
 | --- | --- |
@@ -100,7 +107,7 @@ Une carte non configurée affiche **[!UICONTROL Connect]**. Une carte configuré
 
    Saisissez les valeurs **[!UICONTROL ID client (clé du client)]** **[!UICONTROL URL de l’instance]** et **[!UICONTROL secret client]**. Utilisez le `https://{{mydomain}}.my.salesforce.com` de formulaire d’URL d’instance canonique.
 
-   ![Informations d’identification &#x200B;](assets/crm-salesforce-config.png){width="800" zoomable="yes"}
+   ![Informations d’identification ](assets/crm-salesforce-config.png){width="800" zoomable="yes"}
 
    >[!TAB ]
 
@@ -147,7 +154,7 @@ Le mappage entrant contrôle les champs CRM que Marketo Qualifier importe et où
 
 1. Saisissez un **[!UICONTROL Nom de section]** et un **[!UICONTROL Description]** facultatif. Sélectionnez ensuite **[!UICONTROL Suivant]**.
 1. À l’étape **[!UICONTROL Ajouter un champ]**, pour importer des champs CRM, recherchez et sélectionnez-les. Ensuite, pour continuer, sélectionnez **[!UICONTROL Suivant]**. Chaque champ affiche ses **[!UICONTROL Nom d’affichage]**, **[!UICONTROL Nom du champ]** et **[!UICONTROL Type de données]**.
-1. Pour les sections **[!UICONTROL Prospects]**, **[!UICONTROL Contacts]**, **[!UICONTROL Comptes]** et **[!UICONTROL Opportunités]**, activez **[!UICONTROL Filtrable]** pour chaque champ dont les représentants ont besoin sur la liste [Prospects](prospects.md#filter-and-find-prospects) ou dans le ciblage [&#x200B; &#x200B;](outbound-workflows.md#step-2-configure-targeting-filters) des workflows sortants.
+1. Pour les sections **[!UICONTROL Prospects]**, **[!UICONTROL Contacts]**, **[!UICONTROL Comptes]** et **[!UICONTROL Opportunités]**, activez **[!UICONTROL Filtrable]** pour chaque champ dont les représentants ont besoin sur la liste [Prospects](prospects.md#filter-and-find-prospects) ou dans le ciblage [ ](outbound-workflows.md#step-2-configure-targeting-filters) des workflows sortants.
 
    Un champ ne peut pas être filtré si son type de données ne prend pas en charge le filtrage ou s’il est déjà utilisé dans une autre section.
 
@@ -175,7 +182,7 @@ Lorsque la synchronisation des activités est désactivée, Marketo Qualifier co
 
 ## Configurer les points forts marketing {#turn-on-marketo-engagement-filtering}
 
-Les points forts marketing permettent aux représentants de trouver et de classer les prospects par engagement direct [!DNL Marketo], tel que les ouvertures d’e-mail et les clics. Voir [&#x200B; Filtrer par points forts marketing &#x200B;](prospects.md#filter-by-marketing-highlights).
+Les points forts marketing permettent aux représentants de trouver et de classer les prospects par engagement direct [!DNL Marketo], tel que les ouvertures d’e-mail et les clics. Voir [ Filtrer par points forts marketing ](prospects.md#filter-by-marketing-highlights).
 
 Un administrateur effectue une configuration unique qui connecte [!DNL Marketo] à Marketo Qualifier pour l’organisation et le sandbox appropriés. La configuration couvre la création d’informations d’identification d’API dans Adobe Developer Console, la configuration d’un webhook dans [!DNL Marketo] et l’ajout de ce webhook à un déclencheur Smart Campaign. Voir [Configurer les points forts marketing](marketing-highlights-setup.md) pour obtenir des instructions complètes.
 
