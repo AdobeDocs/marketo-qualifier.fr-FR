@@ -1,6 +1,6 @@
 ---
 title: Notes de mise à jour d’[!DNL Adobe Marketo Qualifier]
-description: Découvrez les nouveautés de la version [!DNL Adobe Marketo Qualifier].
+description: Découvrez les nouveautés de [!DNL Adobe Marketo Qualifier].
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 product_v2:
@@ -9,19 +9,19 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
+source-git-commit: f7b2d254601b6dd9a00513dae850ae22a5480b87
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '768'
 ht-degree: 10%
 ---
 # Notes de mise à jour d’[!DNL Adobe Marketo Qualifier]
 
-## Version à venir
+## Version de novembre 2026
 
 * Décrivez en langage clair les personnes que vous souhaitez cibler et transformez-les en filtres de prospect et de contact CRM, utilisez chaque filtre de prospects et de contacts dans le ciblage des workflows sortants et prévisualisez les prospects correspondants avant d’enregistrer. [En savoir plus](outbound-workflows.md#step-2-configure-targeting-filters).
 * Filtrez les prospects par plusieurs valeurs à la fois dans les champs de texte tels que l’intitulé de la fonction et l’adresse électronique, avec jusqu’à cinq valeurs par filtre. [En savoir plus](prospects.md#filter-and-find-prospects).
 * Examinez, modifiez et envoyez des réponses de brouillon AI aux réponses des prospects directement à partir d’un workflow sortant, ou rejetez les brouillons inadaptés. [En savoir plus](outbound-workflows.md#review-and-send-ai-draft-replies).
-* Installez [!DNL Adobe Marketo Qualifier] dans Salesforce ou Microsoft Dynamics 365 et ajoutez des prospects aux workflows sortants ou aux campagnes Marketo à partir des vues de liste Salesforce et des pages d’enregistrement. [En savoir plus](crm-plugin-setup.md).
+* Installez [!DNL Adobe Marketo Qualifier] dans Salesforce ou Microsoft Dynamics 365 et ajoutez les prospects aux workflows sortants ou aux campagnes Marketo à partir des vues de liste et des pages d’enregistrement Salesforce. [En savoir plus](crm-plugin-setup.md).
 * Prise en main plus rapide avec l’audience intelligente (Beta) : une présentation guidée, des options d’ajout rapide lors de la création d’une audience, des listes plus claires avec un nombre d’enregistrements, une colonne Compte qui reste visible et des scores avec code de couleur. [En savoir plus](smart-audience.md).
 * Recherchez et hiérarchisez les comptes et les prospects appropriés avec l’audience intelligente (Beta). Décrivez en langage simple les comptes souhaités, ajoutez des données CRM et des signaux de croissance, passez en revue les prospects notés et ajoutez-les à un workflow sortant. [En savoir plus](smart-audience.md).
 * Filtrez les contacts par champs de compte, à côté des champs de contact et d’opportunité, pour trouver les contacts appropriés et cibler plus précisément les workflows sortants. [En savoir plus](prospects.md#filter-and-find-prospects).
@@ -41,10 +41,10 @@ Cette version comprend les éléments suivants :
 
 Cette version comprend les éléments suivants :
 
-* Affichez les données [!DNL Marketo Sales Insights] et agentiques dans le plug-in CRM incorporé et ajoutez des prospects aux [!DNL Marketo Qualifier]. [En savoir plus](admin-settings.md#crm-mcp-and-the-embedded-plugin).
+* Affichez [!DNL Marketo Sales Insights] et les données agentic dans le plug-in CRM incorporé et ajoutez des prospects à [!DNL Marketo Qualifier]. [En savoir plus](admin-settings.md#crm-mcp-and-the-embedded-plugin).
 * Hiérarchisez les prospects CRM avec les meilleurs résultats, ma liste de surveillance, l’activité web, l’engagement par e-mail et l’activité de webinaire. [En savoir plus](admin-settings.md#prioritize-leads-in-the-crm-plugin).
-* Inscrivez automatiquement les prospects aux workflows sortants lorsque leur activité Live [!DNL Marketo] correspond aux critères du workflow. [En savoir plus](home.md#automatically-enroll-prospects-from-marketing-highlights).
-* Passez en revue le contexte du prospect, exportez la liste des prospects et affichez les résumés de personne IA sur les instances Prime et Ultimate [!DNL Marketo Optimizer]. [En savoir plus](prospects.md#review-prospect-context-and-export-the-list).
+* Inscrivez automatiquement les prospects aux workflows sortants lorsque leur activité [!DNL Marketo] active correspond aux critères du workflow. [En savoir plus](home.md#automatically-enroll-prospects-from-marketing-highlights).
+* Passez en revue le contexte du prospect, exportez la liste des prospects et affichez les résumés de personne IA sur [!DNL Marketo Optimizer] instances Prime et Ultimate. [En savoir plus](prospects.md#review-prospect-context-and-export-the-list).
 * Examinez et approuvez les e-mails de prospects générés provenant de la file d’attente des tâches et répondez avec des suggestions d’agent pendant un workflow sortant. [En savoir plus](tasks.md).
 
 ## 09-08-2026
@@ -62,7 +62,7 @@ Cette version comprend les éléments suivants :
 
 ## 08-17-2026
 
-[!DNL Marketo Qualifier] est désormais disponible en tant qu’application autonome. Il prend en charge [!DNL Marketo Engage] et [!DNL Marketo Optimizer].
+[!DNL Marketo Qualifier] est désormais disponible en tant qu&#39;application autonome. Il prend en charge [!DNL Marketo Engage] et [!DNL Marketo Optimizer].
 
 Cette version comprend les éléments suivants :
 
