@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '1033'
 ht-degree: 1%
 ---
 
@@ -57,7 +57,7 @@ Pour télécharger la liste actuelle des prospects au format CSV, sélectionnez 
 
 La liste des prospects regroupe des personnes provenant de plusieurs sources :
 
-* **Prospects CRM** : [!DNL Adobe Marketo Qualifier] importe automatiquement les leads et les contacts affectés à l&#39;utilisateur connecté. Pour plus d&#39;informations, consultez la section [&#x200B; Intégrations &#x200B;](integrations.md).
+* **Prospects CRM** : [!DNL Adobe Marketo Qualifier] importe automatiquement les leads et les contacts affectés à l&#39;utilisateur connecté. Pour plus d&#39;informations, consultez la section [ Intégrations ](integrations.md).
 * **Prospects importés**—Prospects importés à partir d&#39;un fichier CSV.
 * **Prospects ajoutés manuellement**—Prospects ajoutés individuellement dans Marketo Qualifier.
 
@@ -71,7 +71,7 @@ Pour ajouter des prospects qui ne proviennent pas de votre CRM :
 
    * Pour un import CSV, chargez un fichier CSV au format `firstname,email`.
      Vous devez indiquer votre prénom et votre adresse e-mail. Le nom est facultatif. Le modèle CSV n’inclut pas la colonne d’ID de prospect CRM, mais vous pouvez ajouter la colonne et ses valeurs au fichier avant l’importation. Si l’importation échoue, consultez le message d’erreur pour les champs ou valeurs à corriger, puis chargez à nouveau le fichier.
-     Mappez tous les champs CSV personnalisés ou supplémentaires, et pas seulement les champs standard. Marketo Qualifier enregistre ces valeurs pour chaque prospect et les rend disponibles ultérieurement, y compris pour la [&#x200B; génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
+     Mappez tous les champs CSV personnalisés ou supplémentaires, et pas seulement les champs standard. Marketo Qualifier enregistre ces valeurs pour chaque prospect et les rend disponibles ultérieurement, y compris pour la [ génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
    * Pour ajouter une personne manuellement, saisissez ses détails dans le formulaire.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
@@ -87,7 +87,9 @@ Pour réduire la liste, sélectionnez **[!UICONTROL Filtrer]**. Vous pouvez filt
 * Source
 * Dernière mise à jour
 
-Les administrateurs peuvent également rendre les champs CRM mappés disponibles en tant que filtres. Dans **[!UICONTROL Paramètres d’administration]**, activez **[!UICONTROL Filtrable]** pour chaque champ que les utilisateurs utilisent pour rechercher des prospects. Voir [&#x200B; Mappage des champs CRM &#x200B;](integrations.md#map-crm-fields-inbound-mapping).
+Sur les listes **[!UICONTROL Leads]** et **[!UICONTROL Contacts]**, les filtres de texte tels que **[!UICONTROL Intitulé de la fonction]** et **[!UICONTROL E-mail]** acceptent jusqu’à cinq valeurs avec l’opérateur Contient. Saisissez une valeur et appuyez sur Entrée, puis ajoutez la valeur suivante. Les résultats incluent les prospects correspondant à l’une des valeurs. Par exemple, un filtre Titre de fonction contenant `manager` et `director` renvoie les prospects dont le titre contient l’un des mots. Ce filtrage est disponible pour Salesforce et Microsoft Dynamics 365 et les mêmes filtres peuvent être utilisés dans le [ciblage des workflows sortants](outbound-workflows.md#step-2-configure-targeting-filters).
+
+Les administrateurs peuvent également rendre les champs CRM mappés disponibles en tant que filtres. Dans **[!UICONTROL Paramètres d’administration]**, activez **[!UICONTROL Filtrable]** pour chaque champ que les utilisateurs utilisent pour rechercher des prospects. Voir [ Mappage des champs CRM ](integrations.md#map-crm-fields-inbound-mapping).
 
 Dans **[!UICONTROL Mes contacts d’opportunité]**, vous pouvez également filtrer les contacts par champs à partir des opportunités associées, telles que l’étape, le type et la date de fermeture. Les champs d’opportunité comportent des libellés tels que **[!UICONTROL Phase (Opportunité)]** qui les distinguent des champs de contact. Votre administrateur contrôle les champs d’opportunité disponibles en tant que filtres.
 

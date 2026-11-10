@@ -19,9 +19,9 @@ level_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
     internal-label: Customer engagement
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1105'
 ht-degree: 0%
 ---
 
@@ -109,7 +109,7 @@ Les tâches terminées, ignorées et annulées sont finales. Leurs actions ne so
 
 ## Suggestions d’agent
 
-L’onglet **[!UICONTROL Suggestions d’agent]** répertorie les prospects correspondant aux critères de ciblage d’un workflow sortant et sont recommandés pour l’inscription. Pour activer les recommandations, voir [Workflows sortants](outbound-workflows.md).
+L’onglet **[!UICONTROL Suggestions d’agent]** répertorie les prospects recommandés pour l’inscription à l’aide de l’ensemble complet des [filtres de ciblage des workflows sortants](outbound-workflows.md#step-2-configure-targeting-filters) configurés. Pour activer les recommandations, voir [Workflows sortants](outbound-workflows.md).
 
 Pour examiner une suggestion dans le panneau de travail, sélectionnez-la :
 
@@ -118,7 +118,7 @@ Pour examiner une suggestion dans le panneau de travail, sélectionnez-la :
 
 Deux actions sont disponibles :
 
-* **[!UICONTROL Vérifier les prospects]**—Ouvrez le workflow sortant pour vérifier et inscrire les prospects recommandés. Voir [&#x200B; Ajouter des prospects et commencer la génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
+* **[!UICONTROL Vérifier les prospects]**—Ouvrez le workflow sortant pour vérifier et inscrire les prospects recommandés. Voir [ Ajouter des prospects et commencer la génération d’e-mails](outbound-workflows.md#step-5-add-prospects-and-start-email-generation).
 * **[!UICONTROL Marquer comme terminé]**—Ignorez la suggestion après l&#39;avoir examinée.
 
 L’onglet **[!UICONTROL Suggestions d’agent]** comprend les filtres de statut **[!UICONTROL Actuel]**, **[!UICONTROL Terminé]** et **[!UICONTROL Annulé]**, un filtre Workflow sortant et un tri par date de création.
@@ -139,6 +139,8 @@ Des messages sur les prix, les exigences légales ou de sécurité, les réponse
 1. Ouvrez la suggestion de réponse et examinez le thread complet et la réponse brouillée.
 1. Pour créer un autre brouillon, modifiez la réponse ou sélectionnez **[!UICONTROL Générer avec l’IA]**.
 1. Pour envoyer la réponse et poursuivre le workflow sortant du prospect, sélectionnez **[!UICONTROL Approuver et envoyer]**.
+
+Vous pouvez également [vérifier, modifier, envoyer ou rejeter les brouillons de réponse de l’IA](outbound-workflows.md#review-and-send-ai-draft-replies) à partir de la vue **[!UICONTROL Prospects engagés]** du workflow sortant.
 
 ## Effectuer des tâches à partir d’un workflow sortant
 

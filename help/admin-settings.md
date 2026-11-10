@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1369'
 ht-degree: 0%
 ---
 
@@ -49,7 +49,7 @@ Pour configurer les connexions CRM, le mappage des champs et la synchronisation 
 Marketo Qualifier fonctionne avec votre CRM des manières suivantes :
 
 * **Requêtes CRM MCP** : les requêtes Account Qualification Agent interrogent les données CRM actives afin que les réponses et les informations reflètent l’état actuel de vos enregistrements.
-* **Plug-in intégré** : le plug-in CRM affiche des informations [!DNL Marketo Sales Insights] (MSI) et des données agentiques dans votre CRM. Utilisez le plug-in pour ajouter un prospect à [!DNL Marketo Qualifier].
+* **Plug-in intégré** : le plug-in CRM affiche des informations [!DNL Marketo Sales Insights] (MSI) et des données agentiques dans votre CRM. Utilisez le plug-in pour ajouter un prospect à [!DNL Marketo Qualifier]. Pour l’installation et la configuration des actions Salesforce, voir [Incorporer Marketo Qualifier dans votre CRM](crm-plugin-setup.md).
 * **Synchronisation des activités** : lorsqu’un administrateur active **[!UICONTROL Synchronisation des activités]**, les activités d’extension se synchronisent avec le CRM et Marketo.
 
 ### Hiérarchiser les prospects dans le plug-in CRM
@@ -135,7 +135,7 @@ Une fois les règles de synchronisation CRM configurées, les équipes commercia
 
 Le **[!UICONTROL Centre de connaissances]** donne à Account Qualification Agent (AQA) accès à vos documents de vente. Marketo Qualifier utilise ces ressources pour générer des recherches, des informations sur les qualifications et des informations qui reflètent les ventes de votre entreprise. Seuls les administrateurs peuvent créer et gérer le playbook.
 
-![&#x200B; Centre de connaissances &#x200B;](assets/knowledge-center.png){width="800" zoomable="yes"}
+![ Centre de connaissances ](assets/knowledge-center.png){width="800" zoomable="yes"}
 
 1. Dans le volet de navigation de gauche, développez **[!UICONTROL Administration]**, sélectionnez **[!UICONTROL Paramètres d’administration]**, puis sélectionnez **[!UICONTROL Centre de connaissances]**.
 1. Définissez les paramètres **[!UICONTROL Nom de la société]** et **[!UICONTROL URL de la société]** que Marketo Qualifier utilise pour effectuer des recherches dans votre société et rédiger des e-mails.
@@ -152,7 +152,7 @@ Chaque document chargé affiche également son statut de traitement, tel que **[
 
 Lorsque le manuel est prêt, les représentants peuvent l’utiliser à deux endroits :
 
-* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [&#x200B; Configuration des points de contact &#x200B;](outbound-workflows.md#step-3-generate-and-review-touchpoints).
+* **Invites de courrier électronique sortant** : dans une invite de point de contact, nommez le document et décrivez le contexte à utiliser. Par exemple, saisissez `Use the ABC positioning guide from the Knowledge Center and focus on the security value proposition`. Voir [ Configuration des points de contact ](outbound-workflows.md#step-3-generate-and-review-touchpoints).
 * **Chat IA** : Reportez-vous au Centre de connaissances dans votre question. Par exemple, saisissez `From the Knowledge Center, help me position our security solution for ABC Corp before tomorrow's call`. Voir [Conversation IA](ai-assistant.md).
 
 Dans les deux cas, le contenu généré reflète le message de votre playbook plutôt que la recherche générique.
@@ -195,5 +195,5 @@ ORDER BY LastModifiedDate DESC
 
 >[!MORELIKETHIS]
 >
->* [Prise en main](getting-started.md)
+>* [Commencer](getting-started.md)
 >* [Prospects](prospects.md)

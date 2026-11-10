@@ -21,9 +21,9 @@ topic_v2:
     internal-label: Artificial intelligence
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '2776'
+source-wordcount: '3086'
 ht-degree: 0%
 ---
 
@@ -82,20 +82,21 @@ L’IA conserve les exigences de l’objectif exactement dans les points de cont
 
 Les filtres de ciblage définissent les prospects éligibles. Lorsque vous ajoutez des prospects ultérieurement, seuls ceux qui correspondent à ces filtres apparaissent dans la liste de sélection.
 
-![&#x200B; Filtres de ciblage &#x200B;](assets/create-workflow-targeting.png){width="800" zoomable="yes"}
+Décrivez en langage simple les prospects et les contacts que vous souhaitez joindre dans votre CRM. Par exemple, saisissez `Contacts with open opportunities closing in the next 30 days` ou utilisez une invite d’exemple intégrée pour commencer. [!DNL Adobe Marketo Qualifier] convertit la description en filtres que vous pouvez réviser et modifier avant d’enregistrer. Si une partie de la description ne peut pas être convertie en filtre, elle est marquée de sorte que vous puissiez examiner la condition plutôt que de l’exclure sans le savoir.
 
-Décrivez votre prospect idéal en langage naturel. Par exemple, saisissez `Hot leads at companies with 500 or more employees who requested a demo`. [!DNL Adobe Marketo Qualifier] convertit la description en critères de ciblage que vous pouvez examiner et affiner.
+Le créateur de filtres utilise la même expérience que les filtres [Marketing Highhighlight](prospects.md#filter-by-marketing-highlights) de la page Prospects. Utilisez-le pour ajouter, modifier ou effacer des conditions.
 
-1. Pour ouvrir la liste **[!UICONTROL Ajouter un filtre]**, sélectionnez la flèche vers le bas, puis un filtre.
-
-1. Définissez des valeurs pour le filtre.
-1. Ajoutez d’autres filtres si vous devez limiter l’audience.
-
-1. Accédez aux points de contact.
+1. Passez en revue les filtres générés à partir de votre description ou sélectionnez un filtre pour ajouter manuellement une condition.
+1. Choisissez l’opérateur et saisissez ou sélectionnez les valeurs de chaque condition.
+1. Ajoutez, modifiez ou effacez des conditions pour affiner l’audience.
+1. Sélectionnez **[!UICONTROL Prévisualiser les leads]** ou **[!UICONTROL Prévisualiser les contacts]** pour voir quels prospects correspondent.
+1. Passez en revue l’aperçu et ajustez les filtres si nécessaire avant de continuer à utiliser les points de contact.
 
 Le ciblage peut utiliser le type d’activité, le score, l’évaluation et d’autres attributs disponibles. Combinez des critères avec [!DNL AND] ou [!DNL OR] et utilisez des opérateurs tels que égal à, contient, supérieur à, inférieur à et entre.
 
-Pour Salesforce et Microsoft Dynamics 365, le ciblage peut également combiner les champs de compte, de contact et d’opportunité qu’un administrateur rend filtrables dans le [mappage entrant](integrations.md#map-crm-fields-inbound-mapping). Par exemple, combinez le rôle d’un contact avec le secteur de son compte associé et l’étape d’une opportunité de cibler les bons contacts.
+Chaque filtre des listes **[!UICONTROL Leads]** et **[!UICONTROL Contacts]** peut être utilisé dans le ciblage, y compris les champs de compte, les champs d’opportunité, le statut du workflow sortant et les catégories de contact telles que **[!UICONTROL Mes contacts d’opportunité]**. Les administrateurs sélectionnent les champs CRM pouvant être filtrés dans le [mapping entrant](integrations.md#map-crm-fields-inbound-mapping).
+
+Tous les filtres de ciblage sont enregistrés avec le workflow et appliqués automatiquement lorsque vous ajoutez des prospects. [Suggestions d’agent](tasks.md#agent-suggestions) utilisez le même ensemble complet de filtres afin que les prospects recommandés correspondent à vos critères de ciblage.
 
 ### Inscrire automatiquement les prospects aux activités marketing
 
@@ -146,7 +147,7 @@ Affinez les invites de point de contact avant de générer les e-mails de prospe
 
 La section **[!UICONTROL Paramètres]** contrôle le fonctionnement du workflow sortant.
 
-![&#x200B; Panneau Paramètres &#x200B;](assets/create-workflow-settings.png){width="800" zoomable="yes"}
+![ Panneau Paramètres ](assets/create-workflow-settings.png){width="800" zoomable="yes"}
 
 1. Vérifiez le **[!UICONTROL nom du workflow sortant]** et modifiez-le si nécessaire.
 1. Dans **[!UICONTROL Nombre maximal de prospects par workflow sortant]**, confirmez le nombre maximal de prospects que le workflow sortant peut gérer en même temps.
@@ -160,7 +161,7 @@ La section **[!UICONTROL Paramètres]** contrôle le fonctionnement du workflow 
 
 Pour rétablir les valeurs par défaut de la fenêtre d’envoi, du fuseau horaire, des jours, des règles de suivi et d’absence du bureau, de la visibilité et de la cadence des suggestions, activez **[!UICONTROL Réinitialiser aux paramètres par défaut]**. Le nom du workflow sortant reste inchangé.
 
-Un administrateur configure globalement le pied de page d’opt-out, qui s’applique aux e-mails sortants indépendamment des paramètres du workflow sortant. Voir [&#x200B; Configuration du processus d’opt-out global des e-mails](integrations.md#configure-global-email-opt-out).
+Un administrateur configure globalement le pied de page d’opt-out, qui s’applique aux e-mails sortants indépendamment des paramètres du workflow sortant. Voir [ Configuration du processus d’opt-out global des e-mails](integrations.md#configure-global-email-opt-out).
 
 ### Ajouter des prospects et commencer la génération d’e-mails {#step-5-add-prospects-and-start-email-generation}
 
@@ -259,12 +260,31 @@ Utilisez ces filtres pour que les workflows sortants partagés et les résultats
 * Dans **[!UICONTROL Prospects engagés]** et **[!UICONTROL Performances]**, utilisez **[!UICONTROL Inscrit par]** pour filtrer les prospects par la personne qui les a inscrits. Le filtre correspond par défaut aux prospects que vous avez inscrits.
 * Sur l’onglet **[!UICONTROL Parcourir]**, utilisez le filtre de partage pour sélectionner **[!UICONTROL Partagé par moi]**, **[!UICONTROL Partagé avec moi]**, **[!UICONTROL Privé]** ou **[!UICONTROL Tout]**.
 
+## Vérifier et envoyer les brouillons de réponses de l’IA
+
+Lorsqu’un prospect répond à un e-mail de workflow sortant, vous pouvez vérifier, modifier et envoyer un brouillon de réponse de l’IA directement depuis la vue **[!UICONTROL Prospects engagés]** du workflow, sans passer à Tâches. Pour savoir comment le brouillon utilise le contexte de conversation et quels messages nécessitent une réponse personnelle, voir [Répondre à un prospect avec une suggestion d’agent](tasks.md#reply-to-a-prospect-with-an-agent-suggestion).
+
+1. Ouvrez le workflow sortant et sélectionnez **[!UICONTROL Prospects engagés]**.
+1. Sélectionnez la balise **[!UICONTROL Réponse du brouillon de l’IA à réviser]** en regard d’un prospect.
+
+   L’icône d’informations de la balise indique que le prospect a répondu et qu’un brouillon est prêt. Vous pouvez également trouver le brouillon sous l’e-mail auquel il répond dans les points de contact du prospect, intitulé **[!UICONTROL Répondre à cet e-mail]**.
+
+1. Lisez le message du prospect, qui s’affiche au-dessus de la réponse suggérée.
+1. Modifiez le brouillon selon vos besoins.
+1. Sélectionnez **[!UICONTROL Approuver et envoyer]** pour envoyer la réponse, ou **[!UICONTROL Rejeter la réponse]** pour la rejeter.
+
+   Une confirmation s’affiche après l’une des actions.
+
+Pour ouvrir la conversation e-mail complète, sélectionnez **[!UICONTROL Afficher le thread]**.
+
+Chaque brouillon affiche son statut : **[!UICONTROL Révision en attente]**, **[!UICONTROL Envoyé]**, **[!UICONTROL Rejeté]** ou **[!UICONTROL Annulé]**. Seul le propriétaire du prospect peut approuver ou rejeter un brouillon. S’il n’est pas possible d’agir sur un brouillon, les boutons ne sont pas disponibles et un message en explique la raison.
+
 ## Gestion des réponses d’absence du bureau
 
 Lorsqu’un prospect répond avec un message d’absence du bureau, le workflow sortant le gère automatiquement.
 
 * **Reprise automatique** : activé par défaut. Si la réponse d’absence du bureau comprend une date de retour, le workflow sortant reprend le rythme à cette date. Si aucune date de retour n’est indiquée, le workflow sortant reprend après une mémoire tampon de reprise que votre équipe peut configurer.
-* **Options manuelles** : un rep peut toujours sélectionner **[!UICONTROL Reprendre maintenant]** ou planifier une date de reprise spécifique. Voir [&#x200B; Gestion des workflows sortants existants &#x200B;](#manage-existing-outbound-workflows).
+* **Options manuelles** : un rep peut toujours sélectionner **[!UICONTROL Reprendre maintenant]** ou planifier une date de reprise spécifique. Voir [ Gestion des workflows sortants existants ](#manage-existing-outbound-workflows).
 
 ### Demandes d’opt-out dans les réponses
 
@@ -309,5 +329,5 @@ Suivez les résultats de la réservation sur la page [Performances sortantes](pe
 >[!MORELIKETHIS]
 >
 >* [Tâches](tasks.md)
->* [&#x200B; Centre de connaissances &#x200B;](admin-settings.md#knowledge-center)
+>* [ Centre de connaissances ](admin-settings.md#knowledge-center)
 >* [Performance sortante](performance.md)
