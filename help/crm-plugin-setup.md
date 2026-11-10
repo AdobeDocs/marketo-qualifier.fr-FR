@@ -43,7 +43,7 @@ L’installation du plug-in est distincte de la [connexion de votre CRM à Marke
 
 Installez le package, puis ajoutez ses composants aux pages d’enregistrement que les représentants utilisent.
 
-1. Ouvrez la page d&#39;installation de [](https://experience.adobe.com/solutions/OneAdobe-sales-workflow-optimizer-sales-insight-ui/install/sales-insight?crm=salesforce) puis connectez-vous à Salesforce en tant qu&#39;administrateur.
+1. Ouvrez la page d&#39;installation de [&#128279;](https://experience.adobe.com/solutions/OneAdobe-sales-workflow-optimizer-sales-insight-ui/install/sales-insight?crm=salesforce) puis connectez-vous à Salesforce en tant qu&#39;administrateur.
 1. Sur la page d’installation du package, sélectionnez **[!UICONTROL Installer pour tous les utilisateurs]**, puis sélectionnez **[!UICONTROL Installer]**.
 
    Vous pouvez toujours contrôler l’accès des utilisateurs individuels via les autorisations Salesforce.
@@ -93,7 +93,7 @@ Si un bouton empaqueté est manquant, créez un remplacement sous les **[!UICONT
 1. Sélectionnez **[!UICONTROL Nouveau bouton ou lien]**.
 1. Saisissez un libellé pour l’action, tel que `Add to Outbound Workflow` ou `Add to Marketo Campaign`.
 1. Choisissez **[!UICONTROL Bouton de liste]** pour une vue de liste ou **[!UICONTROL Bouton de page de détail]** pour une page d’enregistrement.
-1. Définissez Source de contenu ]**sur**[!UICONTROL  Page Visualforce ]**et sélectionnez la page d’action du package qui correspond à l’action, à l’objet et à l’emplacement.**[!UICONTROL 
+1. Définissez Source de contenu **sur**&#x200B;[!UICONTROL &#x200B; Page Visualforce &#x200B;]&#x200B;**et sélectionnez la page d’action du package qui correspond à l’action, à l’objet et à l’emplacement.**
 
    La liste de leads, les détails de leads, la liste de contacts et les emplacements de détails de contacts utilisent différentes pages. Vérifiez que la page sélectionnée correspond à l’emplacement que vous êtes en train de configurer.
 
