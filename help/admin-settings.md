@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1369'
 ht-degree: 0%
 ---
 
@@ -49,7 +49,7 @@ Pour configurer les connexions CRM, le mappage des champs et la synchronisation 
 Marketo Qualifier fonctionne avec votre CRM des manières suivantes :
 
 * **Requêtes CRM MCP** : les requêtes Account Qualification Agent interrogent les données CRM actives afin que les réponses et les informations reflètent l’état actuel de vos enregistrements.
-* **Plug-in intégré** : le plug-in CRM affiche des informations [!DNL Marketo Sales Insights] (MSI) et des données agentiques dans votre CRM. Utilisez le plug-in pour ajouter un prospect à [!DNL Marketo Qualifier].
+* **Plug-in intégré** : le plug-in CRM affiche des informations [!DNL Marketo Sales Insights] (MSI) et des données agentiques dans votre CRM. Utilisez le plug-in pour ajouter un prospect à [!DNL Marketo Qualifier]. Pour l’installation et la configuration des actions Salesforce, voir [Incorporer Marketo Qualifier dans votre CRM](crm-plugin-setup.md).
 * **Synchronisation des activités** : lorsqu’un administrateur active **[!UICONTROL Synchronisation des activités]**, les activités d’extension se synchronisent avec le CRM et Marketo.
 
 ### Hiérarchiser les prospects dans le plug-in CRM
@@ -195,5 +195,5 @@ ORDER BY LastModifiedDate DESC
 
 >[!MORELIKETHIS]
 >
->* [Prise en main](getting-started.md)
+>* [Commencer](getting-started.md)
 >* [Prospects](prospects.md)

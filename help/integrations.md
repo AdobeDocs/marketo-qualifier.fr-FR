@@ -25,9 +25,9 @@ level_v2:
 topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1531'
 ht-degree: 1%
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 1%
 Connectez Outlook pour envoyer des e-mails, reconnaître les réponses des prospects et planifier des réunions. Pour mettre les prospects, contacts, comptes, opportunités, activités et propriétaires à la disposition de Account Qualification Agent (AQA) et des workflows sortants, vous pouvez également connecter Adobe Marketo Qualifier à Salesforce ou Microsoft Dynamics 365. Marketo Qualifier lit les données CRM, peut écrire les activités de sensibilisation et le statut de désinscription dans le CRM et peut synchroniser les activités de sensibilisation avec Marketo. Il ne modifie pas les enregistrements CRM d’une autre manière.
 
 Cet article explique comment connecter Outlook, gérer une connexion CRM, mapper des champs, synchroniser des activités et configurer le processus de désinscription aux e-mails. Pour connecter un CRM pour la première fois, voir [Prise en main](getting-started.md#connect-your-crm).
+
+Pour rendre les informations et les actions de Marketo Qualifier disponibles dans Salesforce ou Microsoft Dynamics 365, voir [Incorporer Marketo Qualifier dans votre CRM](crm-plugin-setup.md).
 
 >[!IMPORTANT]
 >
@@ -214,5 +216,5 @@ Votre administrateur CRM prépare l’accès à l’API dans Salesforce ou Dynam
 
 >[!MORELIKETHIS]
 >
->* [Prise en main](getting-started.md)
+>* [Commencer](getting-started.md)
 >* [Comptes](accounts.md)

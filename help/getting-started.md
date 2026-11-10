@@ -26,9 +26,9 @@ level_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: fcdc5d36cbb1500cf984e1439291aa8dbf17b72b
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1063'
 ht-degree: 0%
 ---
 
@@ -179,6 +179,8 @@ Après la connexion au CRM, configurez le mapping entrant pour déterminer quels
 Consultez la section [Mappage des champs CRM (mappage entrant)](integrations.md#map-crm-fields-inbound-mapping) pour obtenir des instructions complètes, notamment sur la manière de rendre les champs importés disponibles sous forme de filtres.
 
 ## Étapes suivantes
+
+Les administrateurs peuvent éventuellement [installer le plug-in CRM](crm-plugin-setup.md) afin que les représentants puissent utiliser les informations de Marketo Qualifier dans Salesforce ou Microsoft Dynamics 365. Dans Salesforce, les administrateurs peuvent également ajouter des actions pour les workflows sortants et les campagnes Marketo aux vues Liste de prospects et de contacts et aux pages d’enregistrement.
 
 >[!MORELIKETHIS]
 >

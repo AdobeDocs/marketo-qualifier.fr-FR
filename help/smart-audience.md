@@ -4,9 +4,9 @@ description: Découvrez comment utiliser l’audience intelligente (Beta) pour c
 feature: Agentic AI, Sales Insights, Account Journeys
 role: User
 badgeBeta: label="Beta" type="Informative"
-source-git-commit: bf94a2d28913093923f446025405339e4e64919c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1313'
 ht-degree: 1%
 ---
 
@@ -17,6 +17,8 @@ L’audience intelligente (Beta) vous aide à trouver les comptes et les personn
 Utilisez la vue Liste avec sa grille, ses filtres et ses boutons, ou utilisez le graphique pour décrire ce que vous souhaitez. Les deux fonctionnent sur la même liste : les modifications de l’une apparaissent dans l’autre. Si une modification n’apparaît pas immédiatement, sélectionnez **[!UICONTROL Actualiser]**.
 
 Le suivi de progression en haut de chaque liste affiche trois étapes : **[!UICONTROL Créer une liste d’audiences intelligentes]**, **[!UICONTROL Hiérarchiser les prospects]** et **[!UICONTROL Ajouter au workflow sortant]**.
+
+La page de destination comprend un exemple de lecture automatique du flux complet en cinq étapes, de la description des comptes à l’ajout de prospects à un workflow sortant. Une présentation détaillée de **[!UICONTROL Fonctionnement]** explique le parcours étape par étape et s’ouvre automatiquement lorsque vous ne disposez d’aucune liste. Vous pouvez ignorer la présentation et la rouvrir à tout moment en sélectionnant **[!UICONTROL Fonctionnement]**.
 
 ## Avant de commencer
 
@@ -29,7 +31,10 @@ Vous pouvez créer jusqu’à 100 listes. Chaque liste contient jusqu’à 500 c
 Commencez par une description des comptes que vous souhaitez atteindre. L’aperçu n’enregistre pas de liste.
 
 1. Ouvrez **[!UICONTROL Audience intelligente]** et sélectionnez **[!UICONTROL Nouvelle audience intelligente]** ou **[!UICONTROL Créer une liste]**.
-1. Dans le chat, décrivez les comptes que vous souhaitez. Par exemple, saisissez `Find healthcare accounts with revenue over $50M`.
+1. Utilisez les options d’ajout rapide et les exemples d’invites sur la page de création d’audience pour commencer votre requête, ou décrivez les comptes que vous souhaitez dans la conversation.
+
+   Par exemple, saisissez `Find healthcare accounts with revenue over $50M`.
+
 1. Vérifiez le nombre de comptes correspondants et l’échantillon dans l’aperçu.
 
 Votre demande peut inclure les critères suivants :
@@ -58,6 +63,8 @@ Enregistrez l’aperçu lorsqu’il correspond à l’audience prévue.
 1. Lorsque l’aperçu est prêt, demandez au chat de l’enregistrer en tant que liste et de donner un nom à la liste.
 1. Examinez les comptes enregistrés dans l’onglet **[!UICONTROL Comptes]**.
 
+Les listes enregistrées s’affichent sous forme de cartes avec des détails de compte, de prospect et d’enrichissement pour vous aider à choisir la liste à ouvrir.
+
 Vous pouvez renommer une liste à partir de sa page. Pour supprimer une liste, ouvrez-la et sélectionnez **[!UICONTROL Supprimer la liste d’audience dynamique]**.
 
 >[!CAUTION]
@@ -82,7 +89,9 @@ Pour ajouter des signaux de croissance, sélectionnez **[!UICONTROL Enrichir les
 
 Par exemple, saisissez `Which of these accounts have raised funding recently?` ou `Which of these accounts have had layoffs?`.
 
-Sur les listes volumineuses, l’ajout d’un signal peut prendre quelques minutes. Suivez la progression indiquée dans la liste, passez en revue chaque nouvelle colonne, puis conservez-la ou ignorez-la.
+Sur les listes volumineuses, l’ajout d’un signal peut prendre quelques minutes. Suivez la progression indiquée dans la liste, passez en revue chaque nouvelle colonne, puis conservez-la ou ignorez-la. Après avoir ajouté une colonne d’enrichissement, sélectionnez **[!UICONTROL Afficher la colonne]** pour l’afficher. La colonne est brièvement mise en surbrillance afin que vous puissiez la trouver sans modifier l’ordre des colonnes.
+
+Les onglets **[!UICONTROL Comptes]** et **[!UICONTROL Prospects]** affichent le nombre d’enregistrements. La colonne **[!UICONTROL Compte]** reste affichée lorsque vous faites défiler la liste horizontalement.
 
 Pour limiter et classer par priorité les comptes :
 
@@ -109,9 +118,13 @@ Pour une demande de conversation, saisissez `Find VP and Director level people a
 
 Consultez les résultats dans l’onglet **[!UICONTROL Leads]**. Chaque prospect affiche son nom, son titre, son compte, son adresse e-mail, son propriétaire et son score. Filtrez par ancienneté, si une adresse e-mail est disponible, score minimal ou maximal, ou si le prospect se trouve dans un workflow. La colonne **[!UICONTROL Raisonnement]** explique pourquoi chaque prospect est classé où il se trouve.
 
+Si l’onglet **[!UICONTROL Prospects]** est vide, suivez ses conseils pour trouver des prospects pour vos comptes présélectionnés.
+
 ### Fonctionnement des scores
 
 Les scores vont de 0 à 100. Un score plus élevé indique une meilleure adéquation et une meilleure préparation à l’engagement. Les mêmes données produisent le même score.
+
+Les scores sont codés par couleur pour aider les matchs les plus forts à se démarquer. Examinez le score numérique et le raisonnement lors de la comparaison des comptes ou des prospects plutôt que de vous fier uniquement à la couleur.
 
 Un score combine :
 

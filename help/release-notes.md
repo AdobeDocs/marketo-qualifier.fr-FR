@@ -9,15 +9,20 @@ product_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ab54d20ccc80d88c3592d89c9f43feeb062ed82c
+source-git-commit: 633ca975d4fe58bdcc84caf633049ae1190b0f56
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 11%
+source-wordcount: '767'
+ht-degree: 10%
 ---
 # Notes de mise à jour d’[!DNL Adobe Marketo Qualifier]
 
 ## Version à venir
 
+* Décrivez en langage clair les personnes que vous souhaitez cibler et transformez-les en filtres de prospect et de contact CRM, utilisez chaque filtre de prospects et de contacts dans le ciblage des workflows sortants et prévisualisez les prospects correspondants avant d’enregistrer. [En savoir plus](outbound-workflows.md#step-2-configure-targeting-filters).
+* Filtrez les prospects par plusieurs valeurs à la fois dans les champs de texte tels que l’intitulé de la fonction et l’adresse électronique, avec jusqu’à cinq valeurs par filtre. [En savoir plus](prospects.md#filter-and-find-prospects).
+* Examinez, modifiez et envoyez des réponses de brouillon AI aux réponses des prospects directement à partir d’un workflow sortant, ou rejetez les brouillons inadaptés. [En savoir plus](outbound-workflows.md#review-and-send-ai-draft-replies).
+* Installez [!DNL Adobe Marketo Qualifier] dans Salesforce ou Microsoft Dynamics 365 et ajoutez des prospects aux workflows sortants ou aux campagnes Marketo à partir des vues de liste Salesforce et des pages d’enregistrement. [En savoir plus](crm-plugin-setup.md).
+* Prise en main plus rapide avec l’audience intelligente (Beta) : une présentation guidée, des options d’ajout rapide lors de la création d’une audience, des listes plus claires avec un nombre d’enregistrements, une colonne Compte qui reste visible et des scores avec code de couleur. [En savoir plus](smart-audience.md).
 * Recherchez et hiérarchisez les comptes et les prospects appropriés avec l’audience intelligente (Beta). Décrivez en langage simple les comptes souhaités, ajoutez des données CRM et des signaux de croissance, passez en revue les prospects notés et ajoutez-les à un workflow sortant. [En savoir plus](smart-audience.md).
 * Filtrez les contacts par champs de compte, à côté des champs de contact et d’opportunité, pour trouver les contacts appropriés et cibler plus précisément les workflows sortants. [En savoir plus](prospects.md#filter-and-find-prospects).
 * Les contacts affichent leur compte associé et le nom du propriétaire, et la page d’un prospect affiche désormais 90 jours d’activité marketing, contre 30 auparavant. [En savoir plus](prospects.md#review-prospect-details).
