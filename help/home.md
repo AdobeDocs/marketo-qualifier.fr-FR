@@ -44,7 +44,7 @@ L&#39;application fait partie de la famille de produits [!DNL Marketo], avec [!D
 * **Posez vos questions en langage naturel** avec le Module de conversation sur l’IA, qui utilise vos données de gestion de la relation client, d’engagement et de centre de connaissances.
 * **Suivez les performances de la sensibilisation** avec des rapports de réservation de réunions et d’e-mails.
 
->[!VIDEO](https://video.tv.adobe.com/v/3505339)
+>[!VIDEO](https://video.tv.adobe.com/v/3505351?captions=fre_fr)
 
 ## Utiliser la page d’accueil
 
